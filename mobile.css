@@ -152,10 +152,9 @@ nav ul li a {
 }
 
 .productos-grid {
+    display: flex;
+    flex-direction: column;
     padding: 3.2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.4rem;
 }
 
 .producto {
