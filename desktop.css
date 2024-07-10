@@ -1,15 +1,38 @@
 @media (min-width: 1024px){
+    .hero{
+        width:100%;
+        height: 640px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--text-color);
+        padding: 1rem 1rem;
+        margin: 0 auto;
+        background-image: url('bg.webp');
+        background-size: cover;
+        background-position: center;
+        background-color: var(--background-lightest);
+    }
+    .hero h1 {
+        font-size: 4.8rem;
+        font-family: "Tan Pearl";
+        color: var(--background-light);
+        text-shadow: .20rem .20rem .25rem var(--background-dark); 
+    }
+
     .productos{
-        padding: 2.4rem;
-        margin:1rem;
+        padding: 1.2rem;
         text-align: center;
         background-color: var(--background-lightest);
     }
 
     .productos-grid {
-        padding: 3.6rem;
+        padding: .333rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 2.4rem;
     }
+
   }
