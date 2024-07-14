@@ -1,7 +1,7 @@
 @media (min-width: 1024px){
     .hero{
         width:100%;
-        height: 640px;
+        height: 540px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -23,7 +23,7 @@
     }
 
     .productos{
-        padding: 1.2rem;
+        padding: .333rem;
         text-align: center;
         background-color: var(--background-lightest);
     }

@@ -241,7 +241,7 @@ footer {
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: var(--primary-color);
+    background-color: var(--background-dark);
     padding: 1.8rem 0;
 }
 
@@ -256,13 +256,13 @@ footer {
 .footer-top h2 {
     font-family: "Tan Pearl";
     font-size: 1.5rem;
-    color: var(--accent-color);
+    color: var(--tertiary-color);
     padding: .333rem;
 }
 
 .footer-top h3 {
     font-size: 1rem;
-    color: var(--accent-color);
+    color: var(--tertiary-color);
     padding: .333rem;
 }
 
