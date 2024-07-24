@@ -16,26 +16,45 @@
     <header>
         <nav>
             <img src="./logo.svg" alt="Logo de Hongos Medicinales" class="logo">
+       <ul>
+        <li>
+            <a href="#catalogo"> Catálogo</a>
+        </li>
+        <li>
+            <a href="#productos"> Productos</a>
+        </li>
+        <li>
+            <a href="#contacto">Contacto</a>
+        </li>
+       </ul>
         </nav>
     </header>
     <main>
 
+
+
+
+
         <section class="hero">
-            <article>
-         <img src="./espora.svg" width="320px" height="320px" alt="esporaQí - IsoLogotipo">
-            <!--
-            <div class="cta-buttons">
-                <a href="#shop" class="cta-button">Productos</a>
-                <a href="#nosotros" class="cta-button">Nosotros</a>
-            </div>
-            -->
+        <article>
+         <img src="./espora.svg" class="logo-esporaqi" width="320px" height="160px" alt="esporaQí - IsoLogotipo">
         </article>
         </section>
 
-
+        <section class="catalogo--section">
+            <article class="catalogo--info">
+                <h2>Catalogo</h2>
+                <p>Descargar nuestro catalogo en formato PDF</p>
+                <button class="catalogo--download">
+                    <a href="./"> Descargar</a>
+                </button>
+            </article>
+            </section>
+            
 
         <section class="productos">
             <h2>PRODUCTOS</h2>
+            <img src="./bg.webp" alt="">
             <p class="descripcion"></p>
             
             <div class="productos-grid">
@@ -96,13 +115,53 @@
                 </article>
             </div>
         </section>
-<!--
-        <section class="testimonios--section">
-            <article>
-                <h2>TESTIMONIOS</h2>
-            </article>
-        </section>
--->
+
+        <section class="testimonial-slider">
+            <h2>Testimonios</h2>
+            <div class="slider-container">
+              <div class="slider">
+                <article class="testimonial">
+                    <img src="./testimonial.svg" alt="Foto de Cliente 3" loading="lazy">
+                  <blockquote>
+                    <p>"Excelente servicio, superó mis expectativas."</p>
+                    - Nombre y Apellido
+                  </blockquote>
+                </article>
+                <article class="testimonial">
+                    <img src="./testimonial.svg" alt="Foto de Cliente 3" loading="lazy">
+                  <blockquote>
+                    <p>"Increíble calidad y atención al detalle."</p>
+                    - Nombre y Apellido
+                  </blockquote>
+                </article>
+                <article class="testimonial">
+                    <img src="./testimonial.svg" alt="Foto de Cliente 3" loading="lazy">
+                  <blockquote>
+                    <p>"Muy profesionales y eficientes."</p>
+                    - Nombre y Apellido
+                  </blockquote>
+                </article>
+                <article class="testimonial">
+                    <img src="./testimonial.svg" alt="Foto de Cliente 3" loading="lazy">
+                  <blockquote>
+                    <p>"Totalmente recomendado, volveré sin duda."</p>
+                    - Nombre y Apellido
+                  </blockquote>
+                </article>
+                <article class="testimonial">
+                    <img src="./testimonial.svg" alt="Foto de Cliente 3" loading="lazy">
+                  <blockquote>
+                    <p>"Una experiencia única y satisfactoria."</p>
+                    - Nombre y Apellido
+                  </blockquote>
+                </article>
+   
+              </div>
+              <button class="prev" aria-label="Testimonio anterior">&lt;</button>
+              <button class="next" aria-label="Siguiente testimonio">&gt;</button>
+            </div>
+          </section>
+
     </main>
     <footer>
         <div class="footer-top">
@@ -146,12 +205,38 @@
         </div>
         <div class="footer-bottom">
             <p>Al navegar por este sitio aceptas nuestros <a href="#">Términos y Condiciones</a></p>
-            <p>HONGOS MEDICINALES © 2024. Derechos reservados.</p>
+            <p>Espora Qí © 2024. Derechos reservados.</p>
             <p>Diseñado por bosqueReset</p>
             <div class="social-media">
                 <a href="https://www.instagram.com/esporaqi/" target="_blank"><img src="ig.svg" alt="Instagram"></a>
             </div>
         </div>
     </footer>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.querySelector('.slider');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  const testimonials = document.querySelectorAll('.testimonial');
+  let currentIndex = 0;
+
+  function showTestimonial(index) {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentIndex);
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+  });
+});
+</script>
+
 </body>
 </html>
