@@ -71,7 +71,7 @@ ul{
     width: 100%;
     height: auto;
     background-color: var(--tertiary-color);
-    padding: 2.4rem;
+    padding: 3.2rem;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -120,7 +120,7 @@ padding: 1.2rem;
 }
 
 .product img{
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 
