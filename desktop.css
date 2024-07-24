@@ -7,6 +7,16 @@
         flex-direction: column;
     }
 
+    .section--text{
+        display:flex;
+        flex-direction: column;
+        width: 33%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        }
+
 
     nav ul li a {
         font-size: 1.6rem;
@@ -33,7 +43,6 @@
     }
     .hero h1 {
         font-size: 4.8rem;
-        font-family: "Tan Pearl";
         color: var(--background-light);
         text-shadow: .20rem .20rem .25rem var(--background-dark); 
     }

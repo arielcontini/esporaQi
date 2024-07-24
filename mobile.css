@@ -82,9 +82,8 @@ ul{
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 2.4rem;
+    padding: .333rem;
 }
-
 
 .catalogo--info h2{
 font-size: 2.4rem;
@@ -115,6 +114,16 @@ padding: 1.2rem;
     height: auto;
 }
 
+.producto img{
+    width: 100%;
+    height: auto;
+}
+
+.product img{
+    width: 50%;
+    height: auto;
+}
+
 .logo-esporaqi{
     width: 100%;
     height: auto;
@@ -123,21 +132,19 @@ padding: 1.2rem;
 }
 
 .logo {
-    width: 2.4rem;
+    width: 3.2rem;
     height: auto;
 }
 
-
 .section--text{
-display: flex;
-flex-direction: column;
-width: 30%;
-height: auto;
-justify-content: center;
-align-items: center;
-margin: 0 auto;
-padding: .333rem .999rem;
-}
+    display:flex;
+    flex-direction: column;
+    width: 88%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    }
 
 nav ul {
     display: flex;
@@ -419,10 +426,7 @@ hr{
 }
 
 
-.product img{
-width: 100%;
-height: auto;
-}
+
 
 .product h2{
     font-family: "Montserrat", sans-serif;
