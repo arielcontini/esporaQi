@@ -71,7 +71,7 @@ ul{
     width: 100%;
     height: auto;
     background-color: var(--tertiary-color);
-    padding: 3.2rem;
+    padding: 2.4rem;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@ ul{
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: .333rem;
+    padding: 1rem;
 }
 
 .catalogo--info h2{
@@ -388,7 +388,7 @@ footer {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 2.4rem;
+    padding: .333rem;
 }
 
 .horarios{
@@ -396,7 +396,7 @@ footer {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 2.4rem;
+    padding: .333rem;
 }
 
 /* productos pagina */
