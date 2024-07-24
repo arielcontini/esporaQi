@@ -8,6 +8,7 @@
     --five-color: #aab589ff;
     --accent-color: #fafae4ff;
     --text-color: #783e19ff; 
+    --black-txt: #1e1007; 
     --background-light:#f9eec8ff;
     --background-lightest:rgb(255, 250, 232);
     --background-dark: #1a1a1a;
@@ -19,6 +20,10 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -120,6 +125,18 @@ padding: 1.2rem;
 .logo {
     width: 2.4rem;
     height: auto;
+}
+
+
+.section--text{
+display: flex;
+flex-direction: column;
+width: 30%;
+height: auto;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+padding: .333rem .999rem;
 }
 
 nav ul {

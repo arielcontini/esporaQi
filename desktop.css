@@ -39,7 +39,7 @@
     }
 
     .productos{
-        padding: .333rem;
+        padding: .999rem;
         text-align: center;
         background-color: var(--background-lightest);
     }
