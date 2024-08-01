@@ -59,6 +59,7 @@ nav{
 a{
     text-decoration: none;
     color: var(--background-light);
+    cursor: pointer;
 }
 
 ul{
@@ -70,7 +71,7 @@ ul{
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: var(--tertiary-color);
+    background-color: var(--background-light);
     padding: 2.4rem;
     margin: 0 auto;
     justify-content: center;
@@ -120,7 +121,7 @@ padding: 1.2rem;
 }
 
 .product img{
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -132,7 +133,7 @@ padding: 1.2rem;
 }
 
 .logo {
-    width: 3.2rem;
+    width: 2.4rem;
     height: auto;
 }
 
@@ -172,6 +173,7 @@ nav ul li a {
     color: var(--text-color);
     padding: 1rem 1rem;
     margin: 0 auto;
+    background-image: url(./bg.webp);
     background-size: cover;
     background-position: center;
     background-color: var(--background-darker);
