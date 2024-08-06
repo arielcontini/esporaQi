@@ -87,7 +87,7 @@ ul{
 }
 
 .catalogo--info h2{
-font-size: 2.4rem;
+font-size: 1.333rem;
 margin: 0 auto;
 padding: 1.2rem;
 }
@@ -208,11 +208,14 @@ h1{
 .productos{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     height: auto;
     text-align: center;
     background-color: var(--background-lightest);
-    margin-top: 3.2rem;
+    margin: 4rem auto;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .productos h2{
@@ -220,7 +223,8 @@ h1{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 1.333rem;
+    margin-top: 2.4rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
     padding: 1.2rem;
@@ -265,7 +269,7 @@ h1{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 2.4rem;
+    font-size: 1.333rem;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     margin: 1rem 0 0.5rem;
@@ -407,12 +411,11 @@ footer {
 .product{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     height: auto;
     text-align: center;
     background-color: var(--background-lightest);
-    margin-top: 3.2rem;
-    margin-bottom: 3.2rem;
+    margin: 4rem auto;
     border: .111rem solid var(--secondary-color);
     border-radius: 2.4rem;
     padding-top: .999rem;
@@ -435,7 +438,7 @@ hr{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 1.333rem;
     margin-bottom: 0.01rem;
     color: var(--primary-color);
     padding-top: 1.2rem;
@@ -487,7 +490,7 @@ hr{
 
 .testimonial-slider h2{
     font-family: "Montserrat", sans-serif;
-font-size: 2.4rem;
+    font-size: 1.333rem;
 display: flex;
 flex-direction: column;
 margin: 0 auto;
