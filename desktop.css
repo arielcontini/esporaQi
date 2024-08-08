@@ -68,15 +68,33 @@
     }
 
 
+  
+
 .product{
-width: 90%;
+width: 50%;
 height: auto;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-margin: 0 auto;
+margin: 6.4rem auto;
 }
+
+
+.product .product--img{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: auto;
+border-radius: 2.4rem;
+margin: 0 auto;
+padding: 0;
+}
+
+
+
+
+
 
 
 .productos--img{
@@ -87,7 +105,6 @@ margin: 0 auto;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding:1rem;
 }
 
 .producto--img{

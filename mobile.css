@@ -126,10 +126,13 @@ padding: 1.2rem;
 }
 
 .logo-esporaqi{
-    width: 100%;
+    width: 66%;
+    max-width: 640px;
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -261,7 +264,6 @@ h1{
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 1.2rem;
 }
 
 .producto h2 {
@@ -416,7 +418,6 @@ footer {
     text-align: center;
     background-color: var(--background-lightest);
     margin: 4rem auto;
-    border: .111rem solid var(--secondary-color);
     border-radius: 2.4rem;
     padding-top: .999rem;
     padding-bottom: .999rem;
