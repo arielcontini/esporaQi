@@ -302,6 +302,27 @@ h1{
     background-color: var(--primary-color); 
 }
 
+.wsp-button{
+    width: 22%;
+    height: auto;
+    padding: .333rem;
+    margin: 0 auto;
+    background-color: transparent;
+    border: .001rem solid var(--four-color);
+    border-radius: 1.1rem;
+    transition: .5s;
+}
+
+.wsp-button:hover{
+    width: 20%;
+    height: auto;
+    padding: .333rem;
+    margin: 0 auto;
+    background-color: transparent;
+    border: .001rem solid var(--four-color);
+    border-radius: 1.1rem;
+    transition: .2s;
+}
 
 /*  VENTAS */ 
 .ventas--section{

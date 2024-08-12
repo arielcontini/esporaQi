@@ -19,7 +19,7 @@
 
 
     nav ul li a {
-        font-size: 1.6rem;
+        font-size: 1.333rem;
         text-decoration: none;
         color: var(--background-light);
         padding: .111rem;
@@ -71,26 +71,110 @@
 
 
     .venta-grid-4{
-        width: 90%;
+        width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
         text-align: center;
         place-content: center;
+        margin: 4.8rem auto;
     } 
 
 
 
+    /*  VENTAS */ 
+.ventas--section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 640px;
+    padding: .333rem;
+    margin: 0 auto;
+    background-color: var(--four-color);
+    color: var(--background-lightest);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
- .venta--info  h3{
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 800;
-        font-style: normal;
-        font-size: 1.666rem;
-        margin: 1.2rem;
+
+.section--title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    max-width: 960px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.venta--section div div h3{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.99rem;
+}
+
+.venta--section div p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+
+
+.boton-atras{
+width: 32px;
+height: auto;
+}
+
+
+.venta--info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2.4rem;
+    margin: 2rem auto;
+    color: var(--background-lightest);
+    text-align: center;
+    border-radius: 1.2rem;
+}
+
+.venta--info div{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: auto;
+    padding: .666rem .999rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.venta--info h3{
+font-size: 1.8rem;
+}
+.venta--info p{ 
+font-size: 1.2rem;
+}
+
+.venta--info div a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.4rem auto; 
+    width: 50%;
+    height: auto;
+    font-size: 1.2rem;
+    padding: .999rem;
+    background-color: transparent;
+    border: .111rem solid var(--background-light);
+    border-radius: 1.2rem;
     }
-
   
 
 .product{
@@ -136,17 +220,6 @@ padding: 0;
     padding: 1rem;
 }
 
-
-.venta--info{
-    display: flex;
-    flex-direction: column;
-    width: 44%;
-    height: auto;
-    padding: 2.4rem;
-    margin: 2rem auto;
-    text-align: center;
-    border-radius: 1.2rem;
-}
 
 
 
