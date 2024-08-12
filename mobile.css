@@ -380,11 +380,12 @@ height: auto;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 2.4rem;
-    margin: 2rem auto;
+    padding: .333rem;
+    margin: 0 auto;
     color: var(--background-lightest);
     text-align: center;
     border-radius: 1.2rem;
+    border-bottom: solid .111rem var(--background-darker);
 }
 
 .venta--info div{
@@ -392,9 +393,10 @@ height: auto;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: .666rem .999rem;
+    padding: .333rem;
     margin: 0 auto;
     text-align: center;
+
 }
 .venta--info h3{
 font-size: 1.8rem;
@@ -408,11 +410,10 @@ font-size: 1.2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1.4rem auto; 
+    margin: 0 auto; 
     width: 100%;
     height: auto;
     font-size: 1.2rem;
-    padding: .999rem;
     background-color: transparent;
     border: .111rem solid var(--background-light);
     border-radius: 1.2rem;
@@ -520,6 +521,10 @@ footer {
     padding: .333rem;
 }
 
+.contacto h3{
+    font-size: 1.666rem;
+}
+
 .horarios{
     display: flex;
     flex-direction: column;
@@ -546,7 +551,7 @@ footer {
 
 
 hr{
-    border-color: var(--cuaternary-color);
+    border-color: var(--background-light);
     margin: .333rem;
 }
 
