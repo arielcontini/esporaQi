@@ -68,6 +68,22 @@
     }
 
 
+ .ventas--info div h3{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 1.3rem;
+    }
+    
+    .ventas--section div p{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.333rem;
+    }
+
   
 
 .product{
