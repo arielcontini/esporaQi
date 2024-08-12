@@ -310,7 +310,7 @@ h1{
     width: 100%;
     height: auto;
     min-height: 640px;
-    padding: 1.2rem;
+    padding: .333rem;
     margin: 0 auto;
     background-color: var(--four-color);
     color: var(--background-lightest);
@@ -331,21 +331,22 @@ h1{
     justify-content: center;
 }
 
-.ventas--section div h3{
+.venta--section div h3{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
-    font-size: 1.333rem;
+    font-size: 1.99rem;
 }
 
-.ventas--section div p{
+.venta--section div p{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
+
 
 .boton-atras{
 width: 32px;
@@ -374,6 +375,29 @@ height: auto;
     margin: 0 auto;
     text-align: center;
 }
+.venta--info h3{
+font-size: 1.8rem;
+}
+.venta--info p{ 
+font-size: 1.2rem;
+}
+
+.venta--info div a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.4rem auto; 
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    padding: .999rem;
+    background-color: transparent;
+    border: .111rem solid var(--background-light);
+    border-radius: 1.2rem;
+    }
+
+
 
 
 
@@ -501,10 +525,8 @@ footer {
 
 
 hr{
-    color: var(--secondary-color);
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-    margin: 1.2rem;
+    border-color: var(--cuaternary-color);
+    margin: .333rem;
 }
 
 
