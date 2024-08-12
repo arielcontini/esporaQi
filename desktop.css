@@ -95,7 +95,7 @@ padding: 0;
 .productos--img{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     height: 1024px;
     align-items: center;
     justify-content: center;
@@ -106,10 +106,11 @@ padding: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 480px;
+    height: 320px;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 

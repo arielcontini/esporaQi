@@ -4,6 +4,7 @@
     --primary-color: #783e19ff; 
     --secondary-color:#c56927ff;
     --tertiary-color:  #ba9571ff;
+    --cuaternary-color: #241a23;
     --four-color: #5e7153ff;
     --five-color: #aab589ff;
     --accent-color: #fafae4ff;
@@ -292,14 +293,13 @@ h1{
 
 .producto button {
     background-color: var(--primary-color);
-    color: white;
-    padding: 1rem 1rem;
+    color: var(--background-light);
+    padding: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .producto button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 
@@ -312,7 +312,7 @@ h1{
     min-height: 640px;
     padding: 1.2rem;
     margin: 0 auto;
-    background-color: var(--tertiary-color);
+    background-color: var(--four-color);
     color: var(--background-lightest);
     text-align: center;
     justify-content: center;
@@ -325,9 +325,8 @@ h1{
     flex-direction: column;
     width: 100%;
     min-width: 320px;
-    max-width: 640px;
+    max-width: 1024px;
     height: auto;
-    background-color: transparent;
     align-items: center;
     justify-content: center;
 }
@@ -340,6 +339,11 @@ h1{
     font-size: 1.333rem;
 }
 
+.boton-atras{
+width: 32px;
+height: auto;
+}
+
 
 .venta--info{
     display: flex;
@@ -348,10 +352,8 @@ h1{
     height: auto;
     padding: 2.4rem;
     margin: 2rem auto;
-    background-color: var(--tertiary-color);
     color: var(--background-lightest);
     text-align: center;
-    border: .111rem solid var(--secondary-color);
     border-radius: 1.2rem;
 }
 
@@ -360,10 +362,8 @@ h1{
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: .333rem;
+    padding: .666rem .999rem;
     margin: 0 auto;
-    background-color: var(--tertiary-color);
-    color: var(--background-lightest);
     text-align: center;
 }
 
