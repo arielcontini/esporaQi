@@ -121,10 +121,7 @@ padding: 0;
     height: auto;
     padding: 2.4rem;
     margin: 2rem auto;
-    background-color: var(--tertiary-color);
-    color: var(--background-lightest);
     text-align: center;
-    border: .111rem solid var(--background-lightest);
     border-radius: 1.2rem;
 }
 
