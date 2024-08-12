@@ -10,7 +10,7 @@
     --text-color: #783e19ff; 
     --black-txt: #1e1007; 
     --background-light:#f9eec8ff;
-    --background-lightest:rgb(255, 250, 232);
+    --background-lightest:#fffae8;
     --background-dark: #1a1a1a;
     --background-darker: #000000;
 }
@@ -302,6 +302,71 @@ h1{
     background-color: var(--secondary-color);
 }
 
+
+/*  VENTAS */ 
+.ventas--section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 640px;
+    padding: 1.2rem;
+    margin: 0 auto;
+    background-color: var(--tertiary-color);
+    color: var(--background-lightest);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section--title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.ventas--section h3{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.333rem;
+}
+
+
+.venta--info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2.4rem;
+    margin: 0 auto;
+    background-color: var(--tertiary-color);
+    color: var(--background-lightest);
+    text-align: center;
+}
+
+.venta--info div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: .333rem;
+    margin: 0 auto;
+    background-color: var(--tertiary-color);
+    color: var(--background-lightest);
+    text-align: center;
+}
+
+
+
+
 /* footer */
 
 footer {
@@ -483,7 +548,7 @@ hr{
 
 .testimonial-slider {
     max-width: 100%;
-    margin: 4.8rem auto;
+    margin: 0 auto;
     padding: 4.8rem .333rem;
     border: .0333rem solid var(--primary-color);
     border-radius: .111rem;
