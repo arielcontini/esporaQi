@@ -15,10 +15,99 @@
 
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html"> <img src="../atras.svg" class="boton-atras" width="160px" height="auto" alt="boton de atrás"> </a></li>
-        </nav>
+        <header id="nav-menu" aria-label="navigation bar">
+   
+            <div class="container">
+              <div class="nav-start">
+                <a class="logo" href="#nav-menu">
+                  <img
+                    src="../logo.svg"
+                    width="35"
+                    height="35"
+                    alt="Inc Logo"
+                  />
+                </a>
+                <nav class="menu">
+                  <ul class="menu-bar">
+                    <li><a class="nav-link" href="#nav-menu"> Inicio</a></li>
+                    <li><a class="nav-link" href="#catalogo"> Catalogo</a></li>
+                    <li><a class="nav-link" href="#historia"> Historia</a></li>        
+                    <li>
+                      <button
+                        class="nav-link dropdown-btn"
+                        data-dropdown="dropdown2"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-label="discover"
+                      >
+                       Productos
+                        <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                      </button>
+        
+                      <div id="dropdown2" class="dropdown">
+                        <ul role="menu">
+                          <li>
+                            <span class="dropdown-link-title">Psilocybina</span>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="#microdosis">Microdosis</a>
+                          </li>
+                        </ul>
+                        <ul role="menu">
+                          <li>
+                            <span class="dropdown-link-title">Tinturas</span>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="#cordyceps"
+                              >Cordyceps</a
+                            >
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="#melena-de-leon">Melena de León</a>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="#reishi">Reishi</a>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="#shiitake">Shiitake</a>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="#trametes-versicolor">Trametes Versicolor</a>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="#fungi-mix">Fungi Mix</a>
+                          </li>
+                        </ul>
+                        <ul role="menu">
+                          <li>
+                            <span class="dropdown-link-title">Cannabis</span>
+                          </li>
+                          <li role="menuitem">
+                            <a class="dropdown-link" href="#aceite-medicinal"> Aceite Medicinal</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li><a class="nav-link" href="#puntos-de-venta"> Puntos de Venta</a></li>
+                    <li><a class="nav-link" href="#contacto"> Contacto</a></li>
+                   <li><a class="social-media" href="https://www.instagram.com/esporaqi/" target="_blank"><img src="../ig.svg" alt="Instagram"></a></li>
+               
+                  </ul>
+                </nav>
+              </div>
+              <div class="nav-end">
+                <button
+                  id="hamburger"
+                  aria-label="hamburger"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="bx bx-menu" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </header>
     </header>
 
     <main>
