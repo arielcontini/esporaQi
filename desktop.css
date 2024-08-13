@@ -18,12 +18,7 @@
         }
 
 
-    nav ul li a {
-        font-size: 1.333rem;
-        text-decoration: none;
-        color: var(--background-light);
-        padding: .111rem;
-    }
+
 
     .hero{
         width:100%;
@@ -46,6 +41,18 @@
         color: var(--background-light);
         text-shadow: .20rem .20rem .25rem var(--background-dark); 
     }
+
+    .social-media {
+        margin-top: 1rem;
+    }
+    
+    .social-media img {
+        width: 66px;
+        height: 66px;
+        margin: 0 0.5rem;
+    }
+    
+
 
     .productos{
         padding: 2.4rem 1.2rem;
@@ -78,7 +85,17 @@
         text-align: center;
         place-content: center;
     } 
-
+    .social-media {
+        margin-top: 1rem;
+    }
+    
+    .social-media img {
+        width: 20px;
+        height: 20px;
+        margin: 0 0.5rem;
+    }
+    
+    
 
     .wsp-button{
         width: 30%;
@@ -271,5 +288,9 @@ padding: 1.2rem;
     color: var(--tertiary-color);
     background-color: var(--background-darker);
 }
+
+
+
+
 
   }
