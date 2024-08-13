@@ -3,17 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espora QI</title>
+    <title>Espora Qí</title>
     <link rel="stylesheet" href="../mobile.css">
     <link rel="stylesheet" href="../desktop.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
     <link rel="manifest" href="../site.webmanifest">
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
 </head>
 
 <body>
+
+
+  <header id="nav-menu" aria-label="navigation bar">
+   
+    <div class="container">
+      <div class="nav-start">
+        <a class="logo" href="#nav-menu">
+          <img
+            src="../logo.svg"
+            width="35"
+            height="35"
+            alt="Inc Logo"
+          />
+        </a>
+        <nav class="menu">
+          <ul class="menu-bar">
+            <li><a class="nav-link" href="#nav-menu"> Inicio</a></li>
+            <li><a class="nav-link" href="#catalogo"> Catalogo</a></li>
+            <li><a class="nav-link" href="#historia"> Historia</a></li>
+        
+            <li>
+              <button
+                class="nav-link dropdown-btn"
+                data-dropdown="dropdown2"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-label="discover"
+              >
+               Productos
+                <i class="bx bx-chevron-down" aria-hidden="true"></i>
+              </button>
+
+              <div id="dropdown2" class="dropdown">
+                <ul role="menu">
+                  <li>
+                    <span class="dropdown-link-title">Psilocybina</span>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#microdosis">Microdosis</a>
+                  </li>
+                </ul>
+                <ul role="menu">
+                  <li>
+                    <span class="dropdown-link-title">Tinturas</span>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#cordyceps"
+                      >Cordyceps</a
+                    >
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#melena-de-leon">Melena de León</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#reishi">Reishi</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#shiitake">Shiitake</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#trametes-versicolor">Trametes Versicolor</a>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#fungi-mix">Fungi Mix</a>
+                  </li>
+                </ul>
+                <ul role="menu">
+                  <li>
+                    <span class="dropdown-link-title">Cannabis</span>
+                  </li>
+                  <li role="menuitem">
+                    <a class="dropdown-link" href="#aceite-medicinal"> Aceite Medicinal</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="nav-link" href="#testimonios">Testimonios</a></li>
+            <li><a class="nav-link" href="#puntos-de-venta"> Puntos de Venta</a></li>
+            <li><a class="nav-link" href="#contacto"> Contacto</a></li>
+       
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-end">
+        <button
+          id="hamburger"
+          aria-label="hamburger"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+
     <header>
+      <!--
         <nav>
             <a href="#portada"><img src="../logo.svg" alt="Logo de Hongos Medicinales" class="logo"></a>
        <ul>
@@ -34,6 +137,8 @@
         </li>
        </ul>
         </nav>
+-->
+
     </header>
     <main>
         <section id="portada" class="hero">
@@ -60,7 +165,7 @@
             
             <div class="productos-grid">
             
-                <article class="producto">
+                <article id="microdosis" class="producto">
                     <img src="../psilo.webp" alt="Superalimento" class="producto--img">
                     <h2>Microdosis</h2>
                     <p>Las microdosis de psilocibina, se asocian con potenciales beneficios como mejora del humor, reducción del estrés y ansiedad, aumento de creatividad y concentración. .
@@ -69,7 +174,7 @@
                 </article>
 
 
-                <article class="producto">
+                <article id="cordyceps" class="producto">
                     <img src="../cordiceps.webp" alt="Superalimento" class="producto--img">
                     <h2>Cordyceps</h2>
                     <p>
@@ -79,7 +184,7 @@
                   <a href="../cordyceps/" rel="noopener noreferrer">  <button>Conocer más</button></a>
                 </article>
                 
-                <article class="producto">
+                <article id="melena-de-leon" class="producto">
                     <img src="../melena-leon.webp" alt="Cosmética" class="producto--img">
                     <h2>Melena de león</h2>
                     <p> Potente aliado para tu sistema nervioso e inmunológico. 
@@ -88,7 +193,7 @@
                    <a href="../melena-de-leon/" rel="noopener noreferrer"> <button> Conocer más</button></a>
                 </article>
                 
-                <article class="producto">
+                <article id="reishi" class="producto">
                     <img src="../reishi.webp" alt="Bienestar" class="producto--img">
                     <h2>Reishi</h2>
                     <p>El hongo de la longevidad. 
@@ -99,7 +204,7 @@
             </div>
 
             <div class="productos-grid-4">
-                <article class="producto">
+                <article id="shiitake" class="producto">
                     <img src="../shiitake.webp" class="producto--img">
                     <h2>Shiitake</h2>
                     <p>
@@ -109,7 +214,7 @@
                   <a href="../shiitake/" rel="noopener noreferrer">  <button> Conocer más </button></a>
                 </article>
 
-                <article class="producto">
+                <article id="trametes-versicolor" class="producto">
                     <img src="../trametes-versicolor.webp" class="producto--img">
                     <h2>Trametes versicolor</h2>
                     <p>Poderoso regenerador celular y antioxidante. 
@@ -118,14 +223,14 @@
                   <a href="../trametes-versicolor/" rel="noopener noreferrer"><button>Conocer más</button></a>
                 </article>
                 
-                <article class="producto">
+                <article id="fungi-mix" class="producto">
                     <img src="../fungi-mix.webp" class="producto--img" alt="Cosmética">
                     <h2>Fungi Mix</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                  <a href="../fungi-mix" rel="noopener noreferrer"><button>Conocer más</button></a>
                 </article>
 
-                <article class="producto">
+                <article id="aceite-medicinal" class="producto">
                     <img src="../aceite-medicinal.webp" class="producto--img">
                     <h2>Aceite Medicinal</h2>
                     <p>Fórmula especial a base de cannabis y aceite de oliva extra virgen. 
@@ -135,7 +240,7 @@
                 </div>
         </section>
 
-        <section class="testimonial-slider">
+        <section id="testimonios" class="testimonial-slider">
             <img src="./testimonios.svg" class="section--text" width="320px" height="100px" >
             <div class="slider-container">
               <div class="slider">
@@ -181,12 +286,12 @@
             </div>
           </section>
 
-        <section id="puntos-de-venta" class="ventas--section">
+
+          <section id="puntos-de-venta" class="ventas--section">
           
             <img src="../venta.svg" class="section--title" width="320px" height="100px">
           <article class="venta-grid-4">
-            <article class="venta--info">
-            
+            <article class="venta--info">    
             <div>
               <hr>
                 <h3>Bariloche</h3>
@@ -302,5 +407,10 @@
 });
 </script>
 
+
+
+
+
+<script src="./script.js"></script>
 </body>
 </html>

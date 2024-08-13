@@ -84,13 +84,6 @@ ul{
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 1rem;
-}
-
-.catalogo--info h2{
-font-size: 1.333rem;
-margin: 0 auto;
-padding: 1.2rem;
 }
 
 .catalogo--info p{
@@ -303,7 +296,7 @@ h1{
 }
 
 .wsp-button{
-    width: 22%;
+    width: 100%;
     height: auto;
     padding: .333rem;
     margin: 0 auto;
@@ -314,7 +307,7 @@ h1{
 }
 
 .wsp-button:hover{
-    width: 21%;
+    width: 90%;
     height: auto;
     padding: .333rem;
     margin: 0 auto;
@@ -331,7 +324,7 @@ h1{
     width: 100%;
     height: auto;
     min-height: 640px;
-    padding: .333rem;
+    padding: 6.66rem;
     margin: 0 auto;
     background-color: var(--four-color);
     color: var(--background-lightest);
@@ -380,12 +373,11 @@ height: auto;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: .333rem;
+    padding: .999rem .111rem;
     margin: 0 auto;
     color: var(--background-lightest);
     text-align: center;
     border-radius: 1.2rem;
-    border-bottom: solid .111rem var(--background-darker);
 }
 
 .venta--info div{
@@ -393,16 +385,18 @@ height: auto;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: .333rem;
+    padding: .999rem .333rem;
     margin: 0 auto;
     text-align: center;
 
 }
 .venta--info h3{
 font-size: 1.8rem;
+padding: .999rem .111rem;
 }
 .venta--info p{ 
 font-size: 1.2rem;
+padding: .999rem .111rem;
 }
 
 .venta--info div a{
@@ -649,6 +643,7 @@ border-radius: 50%;
 margin-bottom: 1rem;
 aspect-ratio: 1 / 1;
 object-fit: cover;
+z-index: 100;
 }
   
 blockquote {
@@ -706,3 +701,259 @@ width: clamp(150px, 50vw, 300px);
 
 
 
+
+
+
+
+/* navbar */
+
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  .btn {
+    display: block;
+    background-color: var(--cuaternary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+  
+  .icon {
+    padding: 0.5rem;
+    background-color: var(--cuaternary-color);
+    border-radius: 10px;
+  }
+  
+  .logo {
+    margin-right: 1.5rem;
+  }
+  
+  #nav-menu {
+    border-bottom: var(--border);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: grid;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    column-gap: 3rem;
+    height: 90px;
+    padding: 1.4rem 4rem;
+    position: fixed;
+    background-color: var(--cuaternary-color);
+    z-index: 100000;
+  }
+  
+  .menu {
+    position: relative;
+    background-color: rgba(30, 0, 30, 0.888);
+  }
+  
+  .menu-bar li:first-child .dropdown {
+    flex-direction: initial;
+    min-width: 480px;
+  }
+  
+  .menu-bar li:first-child ul:nth-child(1) {
+    border-right: var(--border);
+  }
+  
+  .menu-bar li:nth-child(n + 2) ul:nth-child(1) {
+    border-bottom: var(--border);
+  }
+  
+  .menu-bar .dropdown-link-title {
+    font-weight: 600;
+  }
+  
+  .menu-bar .nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    padding: 0.3rem;
+    min-width: 60px;
+    margin: 0 0.6rem;
+    background-color: rgba(30, 0, 30, 0.888);
+  }
+  
+  .menu-bar .nav-link:hover,
+  .dropdown-link:hover {
+    color: var(--background-light);
+  }
+  
+  .nav-start,
+  .nav-end,
+  .menu-bar,
+  .right-container,
+  .right-container .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    min-width: 230px;
+    border-radius: 1rem;
+    position: absolute;
+    top: 3.6rem;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.97) translateX(-5px);
+    transition: 0.1s ease-in-out;
+    background-color: rgba(30, 0, 30, 0.888);
+  }
+  
+  .dropdown.active {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) translateX(5px);
+  }
+  
+  .dropdown ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.95rem;
+    padding: 1.2rem;
+    font-size: 0.95rem;
+  }
+  
+  .dropdown-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.15rem;
+  }
+  
+  .dropdown-link {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    border-radius: 7px;
+    transition: 0.1s ease-in-out;
+    background-color: rgba(30, 0, 30, 0.888);
+  }
+  
+  .dropdown-link p {
+    font-size: 0.8rem;
+    color: var(--background-light);
+  }
+  
+  .right-container {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  
+  .right-container .search {
+    position: relative;
+  }
+  
+  .right-container img {
+    border-radius: 50%;
+  }
+  
+  .nav-link{
+    background-color: rgba(30, 0, 30, 0.888);
+  }
+  
+  #hamburger {
+    display: none;
+    padding: 0.1rem;
+    margin-left: 1rem;
+    font-size: 1.9rem;
+    color: var(--background-light);
+  }
+  
+  @media (max-width: 1100px) {
+
+    #hamburger {
+      display: block;
+    }
+  
+    .container {
+      padding: 1.2rem;
+      text-align: center;
+    }
+  
+    .menu {
+      display: none;
+      position: absolute;
+      top: 87px;
+      left: 0;
+      min-height: 100%;
+      width: 100%;
+    }
+  
+    .menu-bar li:first-child ul:nth-child(1) {
+      border-right: none;
+      border-bottom: var(--four-color);
+    }
+  
+    .dropdown {
+      display: none;
+      min-width: 100%;
+      border: none !important;
+      border-radius: 5px;
+      position: static;
+      top: 0;
+      left: 0;
+      visibility: visible;
+      opacity: 1;
+      transform: none;
+      box-shadow: none;
+    }
+  
+    .menu.show,
+    .dropdown.active {
+      display: block;
+    }
+  
+    .dropdown ul {
+      padding-left: 0.3rem;
+    }
+  
+    .menu-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      row-gap: 1rem;
+      padding: 1rem;
+    }
+  
+    .menu-bar .nav-link {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  
+    .menu-bar li:first-child .dropdown {
+      min-width: 100%;
+    }
+  
+    .menu-bar > li:not(:last-child) {
+      padding-bottom: 0.5rem;
+      border-bottom: var(--border);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .right-container {
+      display: none;
+    }
+  }
