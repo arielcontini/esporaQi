@@ -741,6 +741,7 @@ width: clamp(150px, 50vw, 300px);
   
   .menu {
     position: relative;
+    background-color: var(--cuaternary-color);
   }
   
   .menu-bar li:first-child .dropdown {
@@ -784,6 +785,7 @@ width: clamp(150px, 50vw, 300px);
   .right-container .search {
     display: flex;
     align-items: center;
+    background-color: var(--cuaternary-color);
   }
   
   .dropdown {
@@ -798,7 +800,6 @@ width: clamp(150px, 50vw, 300px);
     opacity: 0;
     transform: scale(0.97) translateX(-5px);
     transition: 0.1s ease-in-out;
-    background-color: var(--cuaternary-color);
   }
   
   .dropdown.active {
@@ -813,6 +814,7 @@ width: clamp(150px, 50vw, 300px);
     gap: 0.95rem;
     padding: 1.2rem;
     font-size: 0.95rem;
+  
   }
   
   .dropdown-btn {
@@ -828,6 +830,7 @@ width: clamp(150px, 50vw, 300px);
     padding: 0.5rem 0;
     border-radius: 7px;
     transition: 0.1s ease-in-out;
+
   }
   
   .dropdown-link p {
