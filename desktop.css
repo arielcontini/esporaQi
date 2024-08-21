@@ -210,7 +210,7 @@ margin: 6.4rem auto;
 }
 
 
-.product .product--img{
+.product--img{
 display: flex;
 flex-direction: column;
 width: 100%;
@@ -241,8 +241,6 @@ padding: 0;
     margin: 0 auto;
     padding: 1rem;
 }
-
-
 
 
 .catalogo--section{
