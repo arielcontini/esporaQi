@@ -234,6 +234,9 @@ h1{
 
 
 .producto {
+  width: 100%;
+  height: auto;
+  min-height: 480px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -259,6 +262,8 @@ h1{
 }
 
 .producto p {
+  height: auto;
+  min-height: 150px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -487,8 +492,8 @@ footer {
 }
 
 .social-media img {
-    width: 66px;
-    height: 66px;
+    width: 44px;
+    height: 44px;
     margin: 0 0.5rem;
 }
 
@@ -742,7 +747,6 @@ width: clamp(150px, 50vw, 300px);
   
   .menu {
     position: relative;
-    background-color: var(--cuaternary-color);
     transition: .5s;
   }
   
@@ -787,7 +791,6 @@ width: clamp(150px, 50vw, 300px);
   .right-container .search {
     display: flex;
     align-items: center;
-    background-color: var(--cuaternary-color);
   }
   
   .dropdown {
