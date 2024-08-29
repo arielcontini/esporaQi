@@ -328,7 +328,7 @@ h1{
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 360px;
+    min-width: 285px;
     max-width: 1024px;
     height: auto;
     align-items: center;
@@ -738,7 +738,6 @@ width: clamp(150px, 50vw, 300px);
     margin: 0 auto;
     column-gap: 3rem;
     height: 90px;
-    padding: 1.4rem 4rem;
     position: fixed;
     z-index: 100000;
     background-color: var(--cuaternary-color);
@@ -748,12 +747,13 @@ width: clamp(150px, 50vw, 300px);
   .menu {
     position: relative;
     transition: .5s;
+    background-color: var(--cuaternary-color);
   }
   
   .menu-bar li:first-child .dropdown {
     flex-direction: initial;
     min-width: 480px;
-    background-color: transparent;
+    background-color: var(--cuaternary-color);
   }
   
   .menu-bar li:first-child ul:nth-child(1) {
@@ -767,21 +767,22 @@ width: clamp(150px, 50vw, 300px);
   .menu-bar .dropdown-link-title {
     font-weight: 600;
     color: var(--background-light);
+    background-color: var(--cuaternary-color);
   }
   
   .menu-bar .nav-link {
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: -0.6px;
-    padding: 0.3rem;
     min-width: 6rem;
-    margin: 0 0.6rem;
     color: var(--background-light);
+    background-color: var(--cuaternary-color);
   }
   
   .menu-bar .nav-link:hover,
   .dropdown-link:hover {
     color: var(--background-light);
+    background-color: var(--cuaternary-color);
   }
   
   .nav-start,
@@ -819,9 +820,8 @@ width: clamp(150px, 50vw, 300px);
     display: flex;
     flex-direction: column;
     gap: 0.95rem;
-    padding: 1.2rem;
     font-size: 0.95rem;
-  
+    background-color: var(--cuaternary-color);
   }
   
   .dropdown-btn {
@@ -834,7 +834,6 @@ width: clamp(150px, 50vw, 300px);
   .dropdown-link {
     display: flex;
     gap: 0.5rem;
-    padding: 0.5rem 0;
     border-radius: 7px;
     transition: 0.1s ease-in-out;
 
@@ -860,7 +859,7 @@ width: clamp(150px, 50vw, 300px);
   }
   
   .nav-link{
-    background-color: transparent;
+    background-color: var(--cuaternary-color);
   }
   
   #hamburger {
@@ -892,7 +891,7 @@ width: clamp(150px, 50vw, 300px);
       left: 0;
       min-height: 100%;
       width: 100%;
-      background-color: transparent;
+      background-color: var(--cuaternary-color);
     }
   
     .menu-bar li:first-child ul:nth-child(1) {
