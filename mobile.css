@@ -52,12 +52,56 @@ ul{
     list-style-type: none;
 }
 
+/* acerca de espora */
+
+.us--section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: var(--four-color);
+  padding: 2.4rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.us--info{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.us--info p{
+  font-size: 1.2rem;
+  text-align: left;
+  text-justify: auto;
+  margin: 0 auto;
+  padding: 1.2rem;
+  color: var(--background-light);
+  }
+  
+.us--download{
+  width: 66%;
+  height: auto;
+  padding: 1.2rem;
+  margin: 0 auto;
+  border:none;
+  border-radius: 1.2rem;
+  color: var(--tertiary-color);
+  background-color: var(--background-darker);
+}
+
+
+/* catalogo */
+
 .catalogo--section{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: var(--background-light);
+    background-color: var(--tertiary-color);
     padding: 2.4rem;
     margin: 0 auto;
     justify-content: center;
@@ -78,7 +122,7 @@ ul{
     }
     
 .catalogo--download{
-    width: 50%;
+    width: 80%;
     height: auto;
     padding: 1.2rem;
     margin: 0 auto;
@@ -600,16 +644,45 @@ hr{
 
 .testimonial-slider h2{
     font-family: "Montserrat", sans-serif;
-    font-size: 1.333rem;
+    font-size: 1.666rem;
 display: flex;
 flex-direction: column;
 margin: 0 auto;
-padding: .333rem;
+padding: .999rem;
 align-items: center;
 justify-content: center;
 color: var(--four-color);
 }
   
+
+.testimonial-slider h3{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.333rem;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+padding: .999rem;
+align-items: center;
+justify-content: center;
+color: var(--four-color);
+}
+
+.testimonial-slider p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+padding: .999rem;
+align-items: center;
+justify-content: center;
+color: var(--four-color);
+width: 60%;
+height: auto;
+}
+
+
+
 .slider-container {
 position: relative;
 overflow: hidden;
@@ -659,8 +732,8 @@ color: white;
 background-color: var(--four-color);
 border: none;
 border-radius: .999rem;
-padding: 1rem 1rem;
-font-size: .999rem;
+padding: .333rem .333rem;
+font-size: 1.2rem;
 cursor: pointer;
 }
   

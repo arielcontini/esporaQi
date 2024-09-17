@@ -276,7 +276,7 @@ padding: 0;
     flex-direction: column;
     width: 100%;
     height: 720px;
-    background-color: var(--tertiary-color);
+    background-color: var(--four-color);
     padding: 2.4rem 4.8rem;
     margin: 0 auto;
     justify-content: center;
