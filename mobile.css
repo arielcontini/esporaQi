@@ -33,12 +33,26 @@ body {
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
     background-color: var(--background-lightest);
+    z-index: -1;
 }
 
 main{
     margin: 0;
     padding: 0;
 }
+
+
+
+.logo-esporaqi{
+  width: 66%;
+  max-width: 640px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
@@ -68,9 +82,24 @@ ul{
 }
 
 .us--info{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.us--info img{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 33%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .us--info p{
@@ -148,15 +177,7 @@ ul{
     height: auto;
 }
 
-.logo-esporaqi{
-    width: 66%;
-    max-width: 640px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .logo {
     width: 2.4rem;
@@ -166,7 +187,7 @@ ul{
 .section--text{
     display:flex;
     flex-direction: column;
-    width: 88%;
+    width: 66%;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -200,9 +221,6 @@ nav ul li a {
     color: var(--text-color);
     padding: 1rem 1rem;
     margin: 0 auto;
-    background-image: url(./bg.webp);
-    background-size: cover;
-    background-position: center;
     background-color: var(--background-darker);
 }
 
@@ -644,7 +662,7 @@ hr{
 
 .testimonial-slider h2{
     font-family: "Montserrat", sans-serif;
-    font-size: 1.666rem;
+    font-size: 1.2rem;
 display: flex;
 flex-direction: column;
 margin: 0 auto;
@@ -669,7 +687,7 @@ color: var(--four-color);
 
 .testimonial-slider p{
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.66rem;
 display: flex;
 flex-direction: column;
 margin: 0 auto;

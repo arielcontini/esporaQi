@@ -9,27 +9,35 @@
 
 
     .social-media {
+        display: flex;
+        flex-direction: column;
         margin-top: .111rem;
+        align-items: center;
+        justify-content: center;
     }
     
     .social-media img {
         width: 32px;
         height: 32px;
-        margin: 0 rem;
+        margin: 0rem;
     }
 
+
     nav{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: auto;
         background-color: transparent;
+        align-items: center;
+        justify-content: center;
     }
-
-
 
     nav ul {
         display: flex;
+        flex-direction: grid;
         list-style-type: none;
-        padding-left: .02rem;
+        padding: 1.2rem;
         width: 100%;
         height: auto;
         justify-content: center;
@@ -38,7 +46,7 @@
     }
     
     nav ul li {
-        margin: 0 .333rem;
+        margin: 0 1.2rem;
         background-color: transparent;
     }
     
@@ -47,9 +55,6 @@
         color: var(--background-light);
         background-color: transparent;
     }
-
-
-
 
     .section--text{
         display:flex;
@@ -60,8 +65,6 @@
         justify-content: center;
         margin: 0 auto;
         }
-
-
 
     .hero{
         width:100%;
@@ -85,30 +88,25 @@
         text-shadow: .20rem .20rem .25rem var(--background-dark); 
     }
 
-
-
     .productos{
         padding: 2.4rem 1.2rem;
         text-align: center;
-        background-color: var(--background-lightest);
+        background-color: transparent;
     }
 
     .productos-grid {
         padding: .111rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 1.2rem;
     }
 
     .productos-grid-4{
         padding: .111rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 1.2rem;
     }
-
-
-
 
     .venta-grid-4{
         width: 100%;
@@ -119,8 +117,6 @@
         place-content: center;
     } 
     
-    
-
     .wsp-button{
         width: 30%;
         height: auto;
@@ -143,7 +139,6 @@
         transition: .2s;
     }
 
-
     /*  VENTAS */ 
 .ventas--section{
     display: flex;
@@ -159,7 +154,6 @@
     align-items: center;
 }
 
-
 .section--title{
     display: flex;
     flex-direction: column;
@@ -171,7 +165,6 @@
     justify-content: center;
     padding: 6rem .444rem;
 }
-
 
 .boton-atras{
 width: 32px;
@@ -276,7 +269,7 @@ padding: 0;
     flex-direction: column;
     width: 100%;
     height: 720px;
-    background-color: var(--four-color);
+    background-color: var(--tertiary-color);
     padding: 2.4rem 4.8rem;
     margin: 0 auto;
     justify-content: center;
@@ -316,6 +309,166 @@ padding: 1.2rem;
 }
 
 
+
+/* testimonios */
+
+.testimonial-slider {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4.8rem .333rem;
+    border: .0333rem solid var(--primary-color);
+    border-radius: .111rem;
+  }
+
+.testimonial-slider h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.666rem;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+padding: .999rem;
+align-items: center;
+justify-content: center;
+color: var(--four-color);
+}
+  
+
+.testimonial-slider h3{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.333rem;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+padding: .999rem;
+align-items: center;
+justify-content: center;
+color: var(--four-color);
+}
+
+.testimonial-slider p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.66rem;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+padding: .999rem;
+align-items: center;
+justify-content: center;
+color: var(--four-color);
+width: 60%;
+height: auto;
+}
+
+
+
+.slider-container {
+position: relative;
+overflow: hidden;
+}
+  
+.slider {
+display: flex;
+transition: transform 0.5s ease;
+}
+  
+.testimonial {
+flex: 0 0 100%;
+padding: 1.9rem;
+text-align: center;
+}
+  
+.testimonial img {
+width: 100%;
+max-width: 666px;
+height: auto;
+border-radius: 50%;
+margin-bottom: 1rem;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+z-index: 100;
+}
+  
+blockquote {
+font-style: italic;
+margin: 0;
+color: var(--four-color);
+}
+  
+cite {
+display: block;
+margin-top: 0.5rem;
+font-style: normal;
+font-weight: bold;
+color: var(--four-color);
+}
+  
+.prev, .next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+color: white;
+background-color: var(--four-color);
+border: none;
+border-radius: .999rem;
+padding: .333rem .333rem;
+font-size: 1.2rem;
+cursor: pointer;
+}
+  
+.prev {
+left: 1rem;
+}
+  
+.next {
+right: 1rem;
+}
+
+
+
+/* acerca de espora */
+
+.us--section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--four-color);
+    padding: 2.4rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .us--info{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    margin: 2.4 auto;
+    padding: 2.4rem;
+  }
+  
+  .us--info p{
+    font-size: 1.66rem;
+    text-align: left;
+    text-justify: auto;
+    margin: 0 auto;
+    padding: 1.2rem;
+    color: var(--background-light);
+    }
+    
+  .us--download{
+    width: 66%;
+    height: auto;
+    padding: 1.2rem;
+    margin: 0 auto;
+    border:none;
+    border-radius: 1.2rem;
+    color: var(--tertiary-color);
+    background-color: var(--background-darker);
+  }
+  
 
 
 
