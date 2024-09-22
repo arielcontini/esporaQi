@@ -53,7 +53,9 @@ main{
   align-items: center;
 }
 
-
+.logo{
+  padding: .111rem;
+}
 
 
 a{
@@ -73,7 +75,7 @@ ul{
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: var(--four-color);
+  background-color: var(--cuaternary-color);
   padding: 2.4rem;
   margin: 0 auto;
   justify-content: center;
@@ -221,6 +223,7 @@ nav ul li a {
     color: var(--text-color);
     padding: 1rem 1rem;
     margin: 0 auto;
+    background-image: url(./bg.webp);
     background-color: var(--background-darker);
 }
 
@@ -655,51 +658,39 @@ hr{
 .testimonial-slider {
     max-width: 100%;
     margin: 0 auto;
-    padding: 4.8rem .333rem;
-    border: .0333rem solid var(--primary-color);
+    padding: 1rem .111em;
     border-radius: .111rem;
+    background-color: var(--cuaternary-color);
   }
 
-.testimonial-slider h2{
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
-display: flex;
-flex-direction: column;
-margin: 0 auto;
-padding: .999rem;
-align-items: center;
-justify-content: center;
-color: var(--four-color);
-}
-  
-
 .testimonial-slider h3{
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.333rem;
+font-family: "Montserrat", sans-serif;
+font-size: 1.4rem;
+font-weight: 600;
 display: flex;
 flex-direction: column;
 margin: 0 auto;
-padding: .999rem;
+padding: .333rem;
 align-items: center;
 justify-content: center;
-color: var(--four-color);
+color: var(--five-color);
+text-align: left;
 }
 
 .testimonial-slider p{
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.66rem;
+font-family: "Montserrat", sans-serif;
+font-size: 1.2rem;
 display: flex;
 flex-direction: column;
 margin: 0 auto;
-padding: .999rem;
+padding: .111rem;
 align-items: center;
 justify-content: center;
-color: var(--four-color);
-width: 60%;
+text-align: left;
+color: var(--five-color);
+width: 70%;
 height: auto;
 }
-
-
 
 .slider-container {
 position: relative;
@@ -717,16 +708,6 @@ padding: 1.9rem;
 text-align: center;
 }
   
-.testimonial img {
-width: 100%;
-max-width: 666px;
-height: auto;
-border-radius: 50%;
-margin-bottom: 1rem;
-aspect-ratio: 1 / 1;
-object-fit: cover;
-z-index: 100;
-}
   
 blockquote {
 font-style: italic;
@@ -746,12 +727,12 @@ color: var(--four-color);
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
-color: white;
-background-color: var(--four-color);
+color: var(--cuaternary-color);
+background-color: var(--five-color);
 border: none;
 border-radius: .999rem;
-padding: .333rem .333rem;
-font-size: 1.2rem;
+padding: .999rem;
+font-size: .999rem;
 cursor: pointer;
 }
   

@@ -32,7 +32,7 @@
             src="../logo.svg"
             width="35"
             height="35"
-            alt="Inc Logo"
+            alt="Isologotipo de Espora Qí"
           />
         </a>
         
@@ -126,20 +126,24 @@
         </section>
 
         <section id="historia" class="us--section text-container">
-          <img src="./historia.svg" width="400px" height="200px" class="reveal">
+          <img src="./historia.svg" width="700px" height="350px" class="reveal">
           <article class="us--info text-box reveal">
    
               <p>Espora Qi es parte de un micelio medicina que está en expansión, queremos compartir  nuestra experiencia  de investigación, producción y acompañamiento en relacion a los hongos y plantas medicinales.</p>
                 
-              <p>Trabajamos hace más de 10 años con plantas y hongos medicinales.. y sus acompañamientos.. </p>
+              <p>Trabajamos hace más de 10 años con plantas y hongos medicinales y sus acompañamientos.</p>
                 
-                <p>En estos momentos además de producir y brindar la medicina contamos con una red de profesionales y terapias alternativas para un tratamiento eficaz y amoroso.Contemplando la atención que cada persona merece</p> 
+                <p>En estos momentos además de producir y brindar la medicina contamos con una red de profesionales y terapias alternativas para un tratamiento eficaz y amoroso. Contemplando la atención que cada persona merece.</p> 
                 
                 <p>Nuestros productos son elaborados artesanalmente en nuestro laboratorio, con materia de primera calidad, orgánica. 
                 Intencionados para brindar el equilibrio dentro del cuerpo físico, mental y espiritual.. mejorando así nuestra calidad de vida. Mejorando asi el vínculo que existe entre especies y reinos de la naturaleza.</p>
                 
-                <img src="./logo.svg" alt="" width="99px" height="99px">
+              
+                <img src="./logo.svg" class="reveal" alt="" width="99px" height="99px">
              
+              </article>
+              <article>
+                
               </article>
           </section>
 
@@ -152,11 +156,16 @@
                </a>
             </article>
             </section>
+
+
+            
             <img src="../productos.webp" class="productos--img" alt="productos de espora qí">
         <section id="productos" class="productos">
 
-       <img src="../productos.svg" class="section--text" width="320px" height="100px">
-            <div class="productos-grid reveal">
+       <img src="../productos.svg" class="section--text reveal" width="320px" height="100px">
+            
+       
+       <div class="productos-grid reveal">
             
                 <article id="microdosis" class="producto">
                     <img src="../psilo.webp" alt="Superalimento" class="producto--img">
@@ -194,7 +203,7 @@
                 </article>         
             </div>
 
-            <div class="productos-grid-4">
+            <div class="productos-grid-4 reveal">
                 <article id="shiitake" class="producto">
                     <img src="../shiitake.webp" class="producto--img">
                     <h2>Shiitake</h2>
@@ -234,7 +243,7 @@
 
 
         <section id="testimonios" class="testimonial-slider">
-            <img src="./testimonios.svg" class="section--text" width="320px" height="100px" >
+            <img src="./testimonios.svg" class="section--text reveal" width="320px" height="100px" >
             <div class="slider-container reveal">
               <div class="slider">
                 <article class="testimonial">
@@ -283,25 +292,11 @@
 
           <section id="puntos-de-venta" class="ventas--section">
           
-            <img src="../venta.svg" class="section--title" width="320px" height="100px">
-          <article class="venta-grid-4 reveal">
-      
-            <article class="venta--info">    
-              
-            <!--
-            <div>
-                <h3>Bariloche</h3>
-                <p><strong>Espacio "Pacha Kuntur" Terapias Holísticas</strong></p>
-                <p>Calle Las Lengas y Los Ñires, Península San Pedro Km 20.</p>
-                <p>Contacto: Laura Hidalgo / +549 11 23447470.</p>
-                <a href="" target="_blank" rel="noopener noreferrer" >Pacha Kuntur</button></a>
-                <p><strong>Carlos | Terapeuta Holístico</strong></p>
-                <p>Zona Centro</p>
-                <p>Contacto: +549 2944628108.</p>
-            </div>
-          -->
-
-            <div>
+            <img src="../venta.svg" class="section--title reveal" width="320px" height="100px">
+         
+            <article class="venta-grid-4 reveal">
+            <article class="venta--info">               
+            <div class="reveal">
                 <h3>Trelew</h3>
                 <p><strong>La boutique del cultivo - GrowShop</strong></p>
                 <p>Calle Pellegrini 1224.</p>
@@ -309,7 +304,6 @@
                 <a href="" target="_blank" rel="noopener noreferrer">La Boutique del Cultivo</a>
             </div>
             </article>
-
         </article>
             </section>
 
@@ -317,7 +311,7 @@
     </main>
     <footer id="contacto">
         <div class="footer-top">
-
+          <section class="contacto reveal">
             <img src="../horarios.svg" class="section--text" width="320px" height="100px">
                 <h3>LUNES A VIERNES</h3>
                 <p>09 A 17 HS</p>
@@ -325,7 +319,7 @@
                 <p>24 hs los 365 días del año</p>
             </section>
 
-            <section class="contacto">
+            <section class="contacto reveal">
                 <img src="../contacto.svg" class="section--text" width="320px" height="100px" alt="productos">
                 <h3><strong>Airina</strong></h3>
                <a class="wsp-button"  href="https://wa.link/0igij0"><p>Contactar por Whatsapp</p></a>
@@ -398,7 +392,7 @@
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+    var elementVisible = 100;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
@@ -407,7 +401,6 @@
     }
   }
 }
-
 window.addEventListener("scroll", reveal, {passive: true});
 </script>
 
