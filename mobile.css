@@ -840,12 +840,13 @@ right: 1rem;
   .right-container .search {
     display: flex;
     align-items: center;
+    padding: 1.2rem;
   }
   
   .dropdown {
     display: flex;
     flex-direction: column;
-    min-width: 333px;
+    min-width: .333rem;
     border-bottom-left-radius: .333rem;
     border-bottom-right-radius: .333rem;
     position: absolute;
