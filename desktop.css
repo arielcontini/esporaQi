@@ -63,7 +63,7 @@
     .section--text{
         display:flex;
         flex-direction: column;
-        width: 33%;
+        width: 30%;
         height: auto;
         align-items: center;
         justify-content: center;
