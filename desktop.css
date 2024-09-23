@@ -37,7 +37,7 @@
         display: flex;
         flex-direction: grid;
         list-style-type: none;
-        padding: 1.2rem;
+        padding: .333rem;
         width: 100%;
         height: auto;
         justify-content: center;
@@ -482,39 +482,6 @@ right: 1rem;
   }
   
 
-
-  .container{
-    width: 100%;
-    height: auto;
-    padding: .333rem;
-  }
-
-
-
-section .text-container{
-   display: flex;
-}
-section .text-container .text-box{
-  margin: 20px;
-  padding: 20px;
-}
-section .text-container .text-box h3{
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 900px){
-  section h1{
-    font-size: 2rem;
-    text-align: center;
-  }
-  section .text-container{
-    flex-direction: column;
-  }
-}
-
 .reveal{
   position: relative;
   transform: translateY(150px);
@@ -526,6 +493,5 @@ section .text-container .text-box h3{
   transform: translateY(0);
   opacity: 1;
 }
-
 
   }

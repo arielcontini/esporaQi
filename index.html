@@ -132,7 +132,8 @@
     <main class="animate__animated animate__fadeIn">
 
         <section id="portada" class="hero">
-          <img src="../espora.svg" class="logo-esporaqi reveal" width="320px" height="160px">
+          <img src="../espora.svg" class="logo-esporaqi" 
+          width="640px" height="160px">
         </section>
 
         <section id="historia" class="us--section text-container">
@@ -319,7 +320,8 @@
 
 
     </main>
-    <footer id="contacto">
+
+    <footer id="contacto animate__animated animate__fadeIn">
         <div class="footer-top">
           <section class="contacto reveal">
             <img src="../horarios.svg" class="section--text" width="320px" height="100px">
@@ -372,8 +374,9 @@
     </footer>
 
 
+
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener('DOMContentLoaded', () => {
   const slider = document.querySelector('.slider');
   const prevButton = document.querySelector('.prev');
   const nextButton = document.querySelector('.next');
@@ -393,16 +396,14 @@
     showTestimonial(currentIndex);
   });
 });
-</script>
 
-<script>
   function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 0;
+    var elementVisible = 200;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
