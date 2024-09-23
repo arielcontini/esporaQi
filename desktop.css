@@ -483,7 +483,11 @@ right: 1rem;
   
 
 
-
+  .container{
+    width: 100%;
+    height: auto;
+    padding: .333rem;
+  }
 
 
 
