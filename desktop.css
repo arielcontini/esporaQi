@@ -1,7 +1,7 @@
 @media (min-width: 1024px){
 
     .logo-esporaqi{
-        width: 44%;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
