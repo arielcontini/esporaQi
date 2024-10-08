@@ -44,7 +44,7 @@ main{
 
 
 .logo-esporaqi{
-  width: 66%;
+  width: 100%;
   max-width: 640px;
   height: auto;
   display: flex;
@@ -257,15 +257,16 @@ h1{
 
 .productos{
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    flex-direction: row;
+    width: 100%;
+    min-width: 320px;
+    min-height: 480px;
     height: auto;
     text-align: center;
-    background-color: var(--background-lightest);
-    margin: 4rem auto;
-    justify-content: center;
-    align-items: center;
-    
+    background-color: var(--background-lightest); 
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:y proximity;
 }
 
 .productos h2{
@@ -286,28 +287,33 @@ h1{
 }
 
 .productos-grid {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 1024px;
+  min-height: 640px;
+  height: auto;
 }
 
 .productos-grid-4{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex-direction: row;
+  min-width: 1024px;
+  min-height: 640px;
+  width: 100%;
+  height: auto;
 }
 
 
-.producto {
+.producto{
   width: 100%;
   height: auto;
-  min-height: 480px;
-    border-radius: 10px;
+  min-width: 320px;
+  min-height: 420px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 3.2rem;
+    padding: .333rem;
 }
 
 .productos--img {
