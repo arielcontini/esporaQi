@@ -1,10 +1,20 @@
 @media (min-width: 1024px){
 
+main{
+    margin: 0 auto;
+    padding: 0;
+}
+
     .logo-esporaqi{
-        width: 100%;
+        width: 40%;
+        min-width: 320px;
         height: auto;
+        top:6.4rem;
+        min-height: 160px;
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        position: absolute;
     }
 
 
@@ -37,7 +47,7 @@
         display: flex;
         flex-direction: grid;
         list-style-type: none;
-        padding: .333rem;
+        padding: .111rem;
         width: 100%;
         height: auto;
         justify-content: center;
@@ -50,8 +60,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-        margin: 0 4.2rem;
-        background-color: transparent;
+    margin: 0 3.2rem;
+    background-color: transparent;
     }
     
     nav ul li a {
@@ -72,19 +82,17 @@
 
     .hero{
         width:100%;
-        height: 1024px;
+        height: 800px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         color: var(--text-color);
-        padding: 1rem 1rem;
         margin: 0 auto;
         /* background-image: url(./bg.webp); */
         background-size: cover;
         background-position: center;
-        background-color: var(--background-dark);
     }
     .hero h1 {
         font-size: 4.8rem;
@@ -93,16 +101,15 @@
     }
 
     .productos{
-        padding: 1rem 1.2rem;
         text-align: center;
-        background-color: transparent;
+        background-color: var(--background-lightest);
     }
 
     .productos-grid {
         padding: .111rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 2.5rem;
+        gap: 1.6rem;
     }
 
     .venta-grid-4{
@@ -150,7 +157,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .section--title{
@@ -317,6 +324,7 @@ padding: 1.2rem;
     padding: 4.8rem .333rem;
     border: .0333rem solid var(--primary-color);
     border-radius: .111rem;
+    background-color: none;
   }
 
 .testimonial-slider h2{
@@ -488,4 +496,9 @@ right: 1rem;
   opacity: 1;
 }
 
+  }
+
+
+  footer{
+    z-index: 10;
   }

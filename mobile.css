@@ -13,7 +13,7 @@
     --background-light:#f9eec8;
     --background-lightest:#fffae8;
     --background-dark: #1a1a1a;
-    --background-darker: #00000000;
+    --background-darker: #0000003a;
 }
 
 
@@ -32,8 +32,8 @@ body {
     flex-direction: column;
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
-    background-color: var(--background-dark);
-    z-index: 100;
+    z-index: 1000;
+    background-color: var(--background-light);
 }
 
 
@@ -43,8 +43,8 @@ body {
   position: fixed;
   min-width: 100%;
   min-height: 100%;
-  z-index: -100;
-  opacity: .222;
+  z-index: -1;
+  opacity: .333;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -54,7 +54,7 @@ body {
 main{
     margin: 0;
     padding: 0;
-    z-index: 10000;
+    z-index: 10;
 }
 
 
@@ -98,6 +98,7 @@ ul{
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 100;
 }
 
 .us--info{
@@ -409,6 +410,7 @@ h1{
     text-align: center;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 
