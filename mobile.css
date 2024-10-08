@@ -33,7 +33,7 @@ body {
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
     z-index: 1000;
-    background-color: var(--background-light);
+    background-color: var(--background-lightest);
 }
 
 
@@ -44,7 +44,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-  opacity: .333;
+  opacity: .222;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -276,10 +276,9 @@ h1{
     flex-direction: row;
     width: 100%;
     min-width: 320px;
-    min-height: 480px;
+    min-height: 200px;
     height: auto;
     text-align: center;
-    background-color: var(--background-lightest); 
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type:y proximity;

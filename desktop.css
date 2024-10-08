@@ -3,6 +3,7 @@
 main{
     margin: 0 auto;
     padding: 0;
+    background-color: var(--background-light);
 }
 
     .logo-esporaqi{
@@ -101,25 +102,22 @@ main{
     }
 
     .productos{
+        display: flex;
+        flex-direction: column;
         text-align: center;
         background-color: var(--background-lightest);
     }
 
-    .productos-grid {
-        padding: .111rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 1.6rem;
-    }
-
-    .venta-grid-4{
+    .productos-grid{
         width: 100%;
         height: auto;
+        min-width: 320px;
+        min-height: 160px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-        text-align: center;
-        place-content: center;
-    } 
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.8rem;
+    }
+
     
     .wsp-button{
         width: 30%;
@@ -253,21 +251,10 @@ padding: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1024px;
+    height: 540px;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-}
-
-.producto--img{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 320px;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 1rem;
 }
 
 .catalogo--section{
