@@ -13,7 +13,7 @@
     --background-light:#f9eec8;
     --background-lightest:#fffae8;
     --background-dark: #1a1a1a;
-    --background-darker: #000000;
+    --background-darker: #00000000;
 }
 
 
@@ -32,13 +32,29 @@ body {
     flex-direction: column;
     margin: 0 auto;
     font-family: "Montserrat", sans-serif;
-    background-color: var(--background-lightest);
-    z-index: -1;
+    background-color: var(--background-dark);
+    z-index: 100;
 }
+
+
+#myVideo {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+  opacity: .222;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 
 main{
     margin: 0;
     padding: 0;
+    z-index: 10000;
 }
 
 
@@ -51,6 +67,7 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .logo{
@@ -194,6 +211,7 @@ ul{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    z-index: 100000;
     }
 
 nav ul {
@@ -223,10 +241,7 @@ nav ul li a {
     color: var(--text-color);
     padding: 1rem 1rem;
     margin: 0 auto;
-    background-image: url(./bg.webp);
     background-color: var(--background-darker);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
 .hero article {

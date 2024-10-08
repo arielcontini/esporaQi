@@ -93,7 +93,7 @@
     }
 
     .productos{
-        padding: 2.4rem 1.2rem;
+        padding: 1rem 1.2rem;
         text-align: center;
         background-color: transparent;
     }
@@ -102,14 +102,7 @@
         padding: .111rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 1.2rem;
-    }
-
-    .productos-grid-4{
-        padding: .111rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 1.2rem;
+        gap: 2.5rem;
     }
 
     .venta-grid-4{
@@ -157,6 +150,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .section--title{
