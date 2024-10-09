@@ -3,7 +3,7 @@
 main{
     margin: 0 auto;
     padding: 0;
-    background-color: var(--background-light);
+    background-color: var(--background-lightest);
 }
 
     .logo-esporaqi{
@@ -105,17 +105,28 @@ main{
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-color: var(--background-lightest);
+        margin: 0 auto;
+        padding: 0;
     }
 
     .productos-grid{
         width: 100%;
         height: auto;
         min-width: 320px;
-        min-height: 160px;
+        min-height: 640px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 1.8rem;
+        padding: 0;
+    }
+
+
+    .producto{
+        width: 100%;
+        height: auto;
+        padding: .111rem;
+        margin: 0 auto;
+        background-color: rgb(255, 249, 213);
     }
 
     
