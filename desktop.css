@@ -74,11 +74,14 @@ main{
     .section--text{
         display:flex;
         flex-direction: column;
-        width: 30%;
+        width: 40%;
         height: auto;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
+        padding: 4.8rem 0;
+        align-items: center;
+        justify-content: center;
         }
 
     .hero{
@@ -106,17 +109,19 @@ main{
         flex-direction: column;
         text-align: center;
         margin: 0 auto;
-        padding: 0;
+        padding: 1.2rem;
+        overflow-x: hidden;
+        overscroll-behavior-x: contain;
+        scroll-snap-type:y proximity;
     }
 
     .productos-grid{
         width: 100%;
         height: auto;
         min-width: 320px;
-        min-height: 640px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 1.8rem;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1.2rem;
         padding: 0;
     }
 
@@ -124,9 +129,13 @@ main{
     .producto{
         width: 100%;
         height: auto;
-        padding: .111rem;
+        min-width: 200px;
+        min-height: 200px;
         margin: 0 auto;
         background-color: rgb(255, 249, 213);
+        border-radius: 1.2rem;
+        border: solid .333rem rgba(20, 20, 20, 0.466);
+        padding: 0;
     }
 
     
