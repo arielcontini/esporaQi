@@ -21,11 +21,14 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    line-height: 1.2rem;
 }
 
 html{
     scroll-behavior: smooth;
 }
+
+
 
 body {
     display: flex;
@@ -44,7 +47,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-  opacity: .444;
+  opacity: 1;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -57,7 +60,10 @@ main{
     z-index: 10;
 }
 
-
+.bx-chevron-down
+{
+    color: var(--tertiary-color);
+}
 
 .logo-esporaqi{
   width: 100%;
@@ -143,6 +149,17 @@ ul{
 }
 
 
+.us--section a{
+  width: 100%;
+  height: auto;
+  padding: 1.2rem;
+  margin: 0 auto;
+  border:none;
+  border-radius: 1.2rem;
+  color: var(--background-lightest);
+  background-color: var(--primary-color);
+}
+
 /* catalogo */
 
 .catalogo--section{
@@ -197,6 +214,10 @@ ul{
     height: auto;
 }
 
+.img--productos{
+  width: 100%;
+  height: auto;
+}
 
 
 .logo {
@@ -231,9 +252,16 @@ nav ul li a {
     background-color: transparent;
 }
 
+.dropdown {
+  display: none;
+}
+.dropdown.active {
+  display: block;
+}
+
 .hero{
     width:100%;
-    height: 640px;
+    height: 720px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,6 +310,7 @@ h1{
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type:y proximity;
+    background-color: var(--background-lightest);
 }
 
 .productos h2{
@@ -325,10 +354,10 @@ h1{
   height: auto;
   min-width: 320px;
   min-height: 420px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 3.2rem;
-    padding: .333rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 3.2rem;
+  padding: .333rem;
 }
 
 .productos--img {
@@ -439,6 +468,7 @@ h1{
     font-style: normal;
     font-size: 1.6rem;
 }
+
 
 
 .boton-atras{
@@ -616,11 +646,28 @@ footer {
     width: 90%;
     height: auto;
     text-align: center;
-    background-color: var(--background-lightest);
     margin: 4rem auto;
     border-radius: 2.4rem;
     padding-top: .999rem;
     padding-bottom: .999rem;
+}
+
+
+.product img{
+  border-radius: 1.2rem;
+}
+
+
+
+
+.bg--primary{
+  background-image: url(./bgh.webp);
+  background-size: contain;
+}
+
+.bg--secondary{
+  background-image: url(./bg2h.webp);
+  background-size: contain;
 }
 
 
@@ -643,6 +690,24 @@ hr{
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
 }
+
+.product .history div{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: .333rem .888rem;
+  text-align: left;
+  font-size: .999rem; 
+}
+
+.product .citas div{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: .333rem .888rem;
+  text-align: left;
+  font-size: .999rem; 
+  font-style: italic;
+}
+
 
 
 .product .benefits div ul{
@@ -715,6 +780,8 @@ height: auto;
 }
 
 .slider-container {
+display: flex;
+flex-direction: column;
 position: relative;
 overflow: hidden;
 }
@@ -730,42 +797,141 @@ padding: 1.9rem;
 text-align: center;
 }
   
+.testimonial img{
+  width: 80%;
+  max-width: 320px;
+  height: auto;
+  padding: 1.6rem;
+}
   
 blockquote {
 font-style: italic;
-margin: 0;
+margin: 0 auto;
 color: var(--four-color);
 }
   
 cite {
 display: block;
-margin-top: 0.5rem;
+margin-top: 0.222rem;
 font-style: normal;
 font-weight: bold;
 color: var(--four-color);
 }
   
-.prev, .next {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-color: var(--cuaternary-color);
-background-color: var(--background-lightest);
-border: none;
-border-radius: .999rem;
-padding: .333rem;
-font-size: .999rem;
+.next, .prev {
+top: 100%;
 cursor: pointer;
+padding: 1.2rem;
+}
+
+.next img{
+  width: 56px;
+  height: auto;
 }
   
+.prev img{
+  max-width: 56px;
+  height: auto;
+}
+  
+
 .prev {
-left: 1rem;
+display: inline-block;
+padding: .8rem;
 }
   
 .next {
-right: 1rem;
+  display: inline-block;
+  padding: .8rem;
+}
+
+
+.slider--buttons{
+  display: flex;
+  flex-direction: grid;
+  place-content: center;
+width: 100%;  
+  padding: .8rem;
 }
   
+
+/* info adaptógenos */
+
+.info--adaptogenos{
+width: 100%;
+height: auto;
+background-color: var(--background-light);
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 4.8rem;
+padding-bottom:4.8rem ;
+}
+
+
+.img--adaptogenos{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border-radius: 1.2rem;
+  margin: 0 auto;
+}
+
+.info--adaptogenos img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.info--adaptogenos article{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.info--adaptogenos h2{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.333rem;
+  color: var(--primary-color);
+}
+
+.info--adaptogenos article h3{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.info--adaptogenos article p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .999rem;
+    color: var(--text-color);
+}
+
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+
 /* navbar */
 
   button {
@@ -1027,7 +1193,6 @@ right: 1rem;
   }
 
 
-
   .fade-in-section {
     opacity: 0;
     transform: translateY(20vh);
@@ -1040,3 +1205,36 @@ right: 1rem;
     transform: none;
     visibility: visible;
   }
+
+
+
+
+.contact--us{
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  margin: 0 auto;
+}
+
+.contact--us h2{
+  color: var(--background-dark);
+  padding: .999rem;
+}
+
+
+.contact--us h3{
+  color: var(--background-dark);
+  padding: .999rem;
+}
+
+.contact--us-btn{
+width: 100%;
+height: auto;
+padding: .333rem;
+margin: 0 auto;
+background-color: var(--cuaternary-color);
+border: .01rem solid var(--background-dark);
+border-radius: 1.1rem;
+}

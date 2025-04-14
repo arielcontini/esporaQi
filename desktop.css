@@ -4,7 +4,21 @@ main{
     margin: 0 auto;
     padding: 0;
     background-color: var(--background-lightest);
+    display: flex;
+    flex-direction: column;
 }
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    line-height: 1.6rem;
+    text-align: center;
+    margin: 0 auto;
+  }
 
     .logo-esporaqi{
         width: 40%;
@@ -48,7 +62,7 @@ main{
         display: flex;
         flex-direction: grid;
         list-style-type: none;
-        padding: .111rem;
+        padding: 1.6rem;
         width: 100%;
         height: auto;
         justify-content: center;
@@ -134,9 +148,10 @@ main{
         margin: 0 auto;
         background-color: rgb(255, 249, 213);
         border-radius: 1.2rem;
-        border: solid .333rem rgba(20, 20, 20, 0.466);
         padding: 0;
     }
+
+
 
     
     .wsp-button{
@@ -168,7 +183,6 @@ main{
     width: 100%;
     height: auto;
     min-height: 360px;
-    max-height: 1080px;
     margin: 0 auto;
     background-color: var(--four-color);
     color: var(--background-lightest);
@@ -204,6 +218,7 @@ height: auto;
     color: var(--background-lightest);
     text-align: center;
     border-radius: 1.2rem;
+    padding: .999rem;
  
 }
 
@@ -222,6 +237,7 @@ font-size: 2.8rem;
 }
 .venta--info div p{ 
 font-size: 1.6rem;
+line-height: 2.4rem;
 }
 
 .venta--info div a{
@@ -265,6 +281,57 @@ border-radius: 2.4rem;
 margin: 0 auto;
 padding: 0;
 }
+
+.product .benefits div ul{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+    text-align: left;
+}
+
+.product .history div{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: .333rem .888rem;
+    text-align: left;
+    font-size: .999rem; 
+}
+
+.product .citas div{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: .333rem .888rem;
+    text-align: left;
+    font-size: .999rem; 
+}
+
+
+
+
+.product .dosage div p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: .333rem .888rem;
+    text-align: left;
+    font-size: .999rem;
+}
+
+.product .note div p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+    text-align: left;
+    font-size: .999rem;
+}
+
+.product .instructions div ul{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+    text-align: left;
+    font-size: .999rem;
+}
+
 
 
 .productos--img{
@@ -368,9 +435,8 @@ align-items: center;
 justify-content: center;
 width: 60%;
 height: auto;
+line-height: 2.4rem;
 }
-
-
 
 .slider-container {
 position: relative;
@@ -386,11 +452,13 @@ transition: transform 0.5s ease;
 flex: 0 0 100%;
 padding: 1.9rem;
 text-align: center;
+width: 100%;
+height: auto;
 }
   
 .testimonial img {
-width: 100%;
-max-width: 666px;
+width: 25%;
+max-width: 555px;
 height: auto;
 border-radius: 50%;
 margin-bottom: 1rem;
@@ -401,7 +469,7 @@ z-index: 100;
   
 blockquote {
 font-style: italic;
-margin: 0;
+margin: 0 auto;
 color: var(--four-color);
 }
   
@@ -413,24 +481,7 @@ font-weight: bold;
 color: var(--four-color);
 }
   
-.prev, .next {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-border: none;
-border-radius: 3rem;
-padding: .666rem .666rem;
-font-size: 1.6rem;
-cursor: pointer;
-}
-  
-.prev {
-left: 1rem;
-}
-  
-.next {
-right: 1rem;
-}
+
 
 
 
@@ -474,6 +525,7 @@ right: 1rem;
     margin: 0 auto;
     padding: .666rem;
     color: var(--background-light);
+    line-height: 2.4rem;
     }
 
 
@@ -506,6 +558,65 @@ right: 1rem;
   }
 
 
+  .medicina{
+    background-color: var(--background-lightest);
+  }
+
+
+
   footer{
     z-index: 10;
   }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+  
+    .info--adaptogenos img{
+        width: 100%;
+        max-height: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top:2.4rem;
+        padding-bottom: 2.4rem;
+      }
+      
+      
+      .info--adaptogenos article{
+        width: 66%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .info--adaptogenos h2{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.4rem;
+        color: var(--primary-color);
+      }
+      
+      .info--adaptogenos article h3{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.3rem;
+        color: var(--primary-color);
+        padding-top: .999rem;
+        padding-bottom: .999rem;
+      }
+      
+      .info--adaptogenos p{
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+          font-size: .999rem;
+          color: var(--text-color);
+      }

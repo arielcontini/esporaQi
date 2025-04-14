@@ -29,7 +29,7 @@
             <img src="../logo.svg" width="35" height="35" alt="Isologotipo de Espora Qí" />
           </a>
           <nav class="menu">
-            <ul class="menu-bar">
+            <ul class="menu-bar" id="navMenu">
               <li>
                 <a class="nav-link" href="#nav-menu"> Inicio</a>
               </li>
@@ -37,7 +37,9 @@
                 <a class="nav-link" href="#historia"> Historia</a>
               </li>
               <li>
-                <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false" aria-label="discover"> Productos <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                <button class="dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" 
+                aria-expanded="false" aria-label="discover"> 
+                  <p class="nav-link"> Productos</p> <i class="bx bx-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div id="dropdown2" class="dropdown">
                   <ul role="menu">
@@ -108,7 +110,7 @@
     <main class="animate__animated animate__fadeIn">
 <!-- The video -->
 <video autoplay muted loop id="myVideo">
-  <source src="./vbg.mp4" type="video/mp4">
+  <source src="./esporaqi-crudito.webm" type="video/mp4">
 </video>
 
       <section id="portada" class="hero">
@@ -118,34 +120,36 @@
 
       <section id="historia" class="us--section text-container">
         <img src="./historia.svg" width="320px" height="100px" class="section--text reveal">
-        <article class="us--info text-box reveal">
-     
-          <p>Espora Qi es parte de un micelio medicina que está en expansión, queremos compartir nuestra experiencia de investigación, producción y acompañamiento en relacion a los hongos y plantas medicinales.</p>
+        <article class="us--info text-box reveal">  
+          <p>Espora Qí es parte de un micelio medicina que está en expansión, queremos compartir nuestra experiencia de investigación, producción y acompañamiento en relacion a los hongos y plantas medicinales.</p>
           <p>Trabajamos hace más de 10 años con plantas y hongos medicinales y sus acompañamientos.</p>
           <p>En estos momentos además de producir y brindar la medicina contamos con una red de profesionales y terapias alternativas para un tratamiento eficaz y amoroso. Contemplando la atención que cada persona merece.</p>
           <p>Nuestros productos son elaborados artesanalmente en nuestro laboratorio, con materia de primera calidad, orgánica. Intencionados para brindar el equilibrio dentro del cuerpo físico, mental y espiritual.. mejorando así nuestra calidad de vida. Mejorando asi el vínculo que existe entre especies y reinos de la naturaleza.</p>
-          <img src="./logo.svg" class="reveal" alt="" width="99px" height="99px">
+         
+          <a href="./adaptogenos/" rel="noopener noreferrer">
+            <button>¿Querés saber mas sobre los hongos adaptógenos?
+            </button>
+          </a>
+
         </article>
-        <article></article>
+
       </section>
 
-
-      <!--
-        <section id="catalogo" class="catalogo--section"><article class="catalogo--info reveal"><img src="../catalogo.svg" class="section--text" width="320px" height="100px"><p>Todo lo que necesitas saber sobre como trabajamos y nuestra filosofía esta en este dossier.</p><a href="../" rel="noopener noreferrer" target="_blank"><button class="catalogo--download">
-                    Descargar
-               </a></article></section>-->
+      
+<section>
+  <img src="./productos.webp" class="img--productos">
+</section>
 
      
 
-
-<div class="medicina">
+<div class="medicina bg--primary">
   <img src="../productos.svg" class="section--text reveal" width="640px" height="100px">     
-</div>
+  </div>
 
-      <section id="productos" class="productos">
+      <section id="productos" class="productos bg--primary">
 
         <div class="productos-grid reveal">
-
+          
           <article id="microdosis" class="producto">
             <img src="../psilo.webp" alt="Superalimento" class="producto--img">
             <h2>Microdosis</h2>
@@ -155,7 +159,6 @@
               <button>Conocer más</button>
             </a>
           </article>
-
           <article id="cordyceps" class="producto">
             <img src="../cordiceps.webp" alt="Superalimento" class="producto--img">
             <h2>Cordyceps</h2>
@@ -164,7 +167,6 @@
               <button>Conocer más</button>
             </a>
           </article>
-
           <article id="melena-de-leon" class="producto">
             <img src="../melena-leon.webp" alt="Cosmética" class="producto--img">
             <h2>Melena de león</h2>
@@ -173,7 +175,6 @@
               <button> Conocer más</button>
             </a>
           </article>
-
           <article id="reishi" class="producto">
             <img src="../reishi.webp" alt="Bienestar" class="producto--img">
             <h2>Reishi</h2>
@@ -192,6 +193,7 @@
             </a>
           </article>
 
+
           <article id="trametes-versicolor" class="producto">
             <img src="../trametes-versicolor.webp" class="producto--img">
             <h2>Trametes versicolor</h2>
@@ -200,7 +202,6 @@
               <button>Conocer más</button>
             </a>
           </article>
-
           <article id="fungi-mix" class="producto">
             <img src="../fungi-mix.webp" class="producto--img" alt="Cosmética">
             <h2>Fungi Mix</h2>
@@ -209,7 +210,6 @@
               <button>Conocer más</button>
             </a>
           </article>
-
           <article id="aceite-medicinal" class="producto">
             <img src="../aceite-medicinal.webp" class="producto--img">
             <h2>Aceite Medicinal</h2>
@@ -220,7 +220,6 @@
           </article>
 
         </div>
->
 
       </section>
 
@@ -228,10 +227,13 @@
 
       <section id="testimonios" class="testimonial-slider">
         <img src="./testimonios.svg" class="section--text reveal" width="320px" height="100px">
+
         <div class="slider-container reveal">
           <div class="slider">
             <article class="testimonial">
+              <img src="./testimonios-1.webp" alt="" class="testimonial--img">
               <blockquote>
+
                 <h3>Tratamiento con Reishi y CBD.</h3>
                 <p>"Luego de la primera semana con reishi durante el día y cbd por la noche pudo volver a dormir plácidamente y sus dolores de cabeza desaparecieron y su estado ánimico mejoró ."</p>
                 <p>
@@ -240,7 +242,9 @@
               </blockquote>
             </article>
             <article class="testimonial">
+              <img src="./testimonios-2.webp" alt="" class="testimonial--img">
               <blockquote>
+        
                 <h3>Tratamiento con Melena de León.</h3>
                 <p>"desapareció la acidez y los malestares estomacales, pudo dejar de tomar farmacos que estaba tomando para esos síntomas y cambio sus hábitos alimenticios.. mejorando por completo su calidad de vida.</p>
                 <p>
@@ -248,8 +252,11 @@
                 </p>
               </blockquote>
             </article>
+
             <article class="testimonial">
+              <img src="./testimonios-3.webp" alt="" class="testimonial--img">
               <blockquote>
+     
                 <h3>Tratamiento con Reishi, melena de león y microdosis.</h3>
                 <p>"Redujo su ansiedad, se pudo enfocar en sus estudios y los pensamientos rumiantes y negativos desaparecieron, mejoro sus hábitos."</p>
                 <p>
@@ -258,7 +265,9 @@
               </blockquote>
             </article>
             <article class="testimonial">
+              <img src="./testimonios-4.webp" alt="" class="testimonial--img">
               <blockquote>
+ 
                 <h3>Tratamiento con Cordyceps.</h3>
                 <p>"Tuvo una lesión hace muchos años en su brazo.. pudo recuperar su elongación, su energía y rendimiento deportivo mejoró notablemente."</p>
                 <p>
@@ -267,6 +276,7 @@
               </blockquote>
             </article>
             <article class="testimonial">
+              <img src="./testimonios-5.webp" alt="" class="testimonial--img">
               <blockquote>
                 <h3>Tratamiento con Reishi y melena de león.</h3>
                 <p>"Niños autista que mejoró su comunicación y sus episodios se redujeron notablemente."</p>
@@ -276,12 +286,33 @@
               </blockquote>
             </article>
           </div>
-          <button class="prev" aria-label="Testimonio anterior">&lt;</button>
-          <button class="next" aria-label="Siguiente testimonio">&gt;</button>
+          <div class="slider--buttons">
+            <button class="prev" aria-label="Testimonio anterior"><img src="./mushu-left.svg" alt=""></button>
+            <button class="next" aria-label="Siguiente testimonio"><img src="./mushu-right.svg" alt=""></button>
+          </div>
+
         </div>
+  
+
+
       </section>
+
+
       <section id="puntos-de-venta" class="ventas--section">
         <img src="../venta.svg" class="section--title reveal" width="320px" height="100px">
+
+        <article class="venta--info">
+          <div class="reveal">
+            <h3>Lago Puelo</h3>
+            <p>
+              <strong> Espora Qí</strong>
+            </p>
+            <p> Las Muticias n°17 Chubut - Lago Puelo.</p>
+            <a href="https://www.instagram.com/esporaqi/" target="_blank" rel="noopener noreferrer"> Seguinos en Instagram</a>
+          </div>
+        </article>
+
+
         <article class="venta-grid-4 reveal">
           <article class="venta--info">
             <div class="reveal">
@@ -290,19 +321,54 @@
                 <strong>La boutique del cultivo - GrowShop</strong>
               </p>
               <p>Calle Pellegrini 1224.</p>
-              <p>Contacto: +549 2804409267.</p>
-              <a href="" target="_blank" rel="noopener noreferrer">La Boutique del Cultivo</a>
+              <p>Contacto: +549 2804409267</p>
+              <a href="https://www.instagram.com/la_boutique_del_cultivo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">La Boutique del Cultivo</a>
             </div>
           </article>
+
+          <article class="venta--info">
+            <div class="reveal">
+              <h3> El Bolsón</h3>
+              <p>
+                <strong> Planta Madre </strong>
+              </p>
+              <p>Don Bosco 420.</p>
+              <p>Contacto: +5492804352289</p>
+              <a href="https://www.instagram.com/planta_madre_cultivos?igsh=aG94NGxqc29mOTAy" target="_blank" rel="noopener noreferrer"> Planta Madre</a>
+            </div>
+          </article>
+
+          <article class="venta--info">
+            <div class="reveal">
+              <h3> Bariloche</h3>
+              <p>
+                <strong> Dietética Om</strong>
+              </p>
+              <p> 20 de febrero 542 (cuadra HPR).</p>
+              <p>Contacto: +5492944-907915</p>
+              <p>Lunes a Viernes de 10 a 14 y 16:30 a 20 hs</p>
+              <a href="https://www.instagram.com/dieteticaom" target="_blank" rel="noopener noreferrer"> Dietética Om</a>
+            </div>
+          </article>
+
+
+
         </article>
       </section>
+
+
+
+
+
+
     </main>
+    
     <footer id="contacto" class=" animate__animated animate__fadeIn">
       <div class="footer-top">
         <section class="contacto reveal">
           <img src="../horarios.svg" class="section--text" width="320px" height="100px">
           <h3>LUNES A VIERNES</h3>
-          <p>09 A 17 HS</p>
+          <p>10 A 18 HS</p>
           <h3>TIENDA ONLINE</h3>
           <p>24 hs los 365 días del año</p>
         </section>
@@ -323,7 +389,7 @@
           <h3>MAIL</h3>
           <p>esporaqi@gmail.com</p>
           <h3>UBICACIÓN</h3>
-          <p>Chubut - Lago Puelo </p>
+          <p> Las Muticias n°17 Chubut - Lago Puelo </p>
           <p>Patagonia Argentina</p>
         </section>
       </div>
@@ -348,6 +414,7 @@
         <p>Diseñado por bosqueReset</p>
       </div>
     </footer>
+
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const slider = document.querySelector('.slider');
@@ -388,32 +455,6 @@
     </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
 
     <script src="./script.js"></script>
   </body>

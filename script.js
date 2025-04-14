@@ -1,9 +1,8 @@
-// script.js
 const dropdownBtn = document.querySelectorAll(".dropdown-btn");
 const dropdown = document.querySelectorAll(".dropdown");
 const hamburgerBtn = document.getElementById("hamburger");
 const navMenu = document.querySelector(".menu");
-const links = document.querySelectorAll(".dropdown a");
+const links = document.querySelectorAll(".dropdown a, .nav-link");
 
 // Toggle the dropdown menu's active state
 function toggleDropdown(dropdownElement) {
@@ -39,7 +38,7 @@ dropdownBtn.forEach((btn) => {
         drop.classList.remove("active");
       }
     });
-    
+
     // Toggle aria-expanded attribute
     const isExpanded = btn.getAttribute("aria-expanded") === "true";
     btn.setAttribute("aria-expanded", isExpanded ? "false" : "true");
@@ -48,12 +47,12 @@ dropdownBtn.forEach((btn) => {
   });
 });
 
-// Add click event listener to each dropdown link
+// Add click event listener to each link (dropdown and nav-link)
 links.forEach((link) =>
   link.addEventListener("click", () => {
     closeDropdownMenu();
     setAriaExpandedFalse();
-    if (navMenu.classList.contains('show')) {
+    if (navMenu.classList.contains("show")) {
       toggleHamburger(); // Close the navigation menu if open
     }
   })
@@ -64,7 +63,7 @@ document.addEventListener("click", (e) => {
   if (!navMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
     closeDropdownMenu();
     setAriaExpandedFalse();
-    if (navMenu.classList.contains('show')) {
+    if (navMenu.classList.contains("show")) {
       toggleHamburger(); // Close the navigation menu if open
     }
   }
@@ -75,7 +74,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     closeDropdownMenu();
     setAriaExpandedFalse();
-    if (navMenu.classList.contains('show')) {
+    if (navMenu.classList.contains("show")) {
       toggleHamburger(); // Close the navigation menu if open
     }
   }
