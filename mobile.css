@@ -63,6 +63,8 @@ main{
 .bx-chevron-down
 {
     color: var(--background-lightest);
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .logo-esporaqi{
@@ -495,11 +497,13 @@ height: auto;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: .111rem .111rem;
+    padding: 1.6rem .111rem;
     margin: 0 auto;
     color: var(--background-lightest);
     text-align: center;
     border-radius: 1.2rem;
+    border-top: 1.2rem; /* corrected from 1.2rems to 1.2rem */
+    border-color: var(--background-lightest);
 }
 
 .venta--info div{
@@ -507,7 +511,7 @@ height: auto;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: .111rem .111rem;
+    padding: 1.6rem .111rem; /* updated padding */
     margin: 0 auto;
     text-align: center;
 
