@@ -60,6 +60,10 @@ main{
     z-index: 10;
 }
 
+.info--adaptogenos--text{
+    color: var(--background-light);
+}
+
 .bx-chevron-down
 {
     color: var(--background-lightest);
@@ -734,6 +738,7 @@ hr{
     font-weight: 500;
     padding: 1rem;
     text-align: left;
+    
 }
 
 
