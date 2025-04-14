@@ -470,6 +470,7 @@ h1{
     font-weight: 700;
     font-style: normal;
     font-size: 1.99rem;
+    line-height: 2.4rem;
 }
 
 .venta--section div p{
@@ -478,6 +479,7 @@ h1{
     font-weight: 400;
     font-style: normal;
     font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 
@@ -638,6 +640,8 @@ footer {
 
 .contacto h3{
     font-size: 1.666rem;
+    line-height: 2.4rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .horarios{
