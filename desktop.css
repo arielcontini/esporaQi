@@ -4,8 +4,6 @@ main{
     margin: 0 auto;
     padding: 0;
     background-color: var(--background-lightest);
-    display: flex;
-    flex-direction: column;
 }
 
 p {
