@@ -35,7 +35,10 @@ body {
     font-family: "Montserrat", sans-serif;
     z-index: 1000;
     background-color: var(--background-lightest);
-}
+    background-image: url(./bgh.webp);
+    background-size: contain;
+    background-repeat: repeat;
+  }
 
 
 #myVideo {
@@ -679,10 +682,8 @@ footer {
 
 .bg--primary{
   background-image: url(./bgh.webp);
-}
-
-.bg--secondary{
-  background-image: url(./bg2h.webp);
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 
