@@ -35,9 +35,6 @@ body {
     font-family: "Montserrat", sans-serif;
     z-index: 1000;
     background-color: var(--background-lightest);
-    background-image: url(./bgh.webp);
-    background-repeat: repeat;
-    background-size: contain;
 }
 
 
@@ -359,6 +356,7 @@ h1{
   font-size: 1.2rem;
   color: var(--background-light);
   font-weight: 500;
+  text-align: center;
 }
 
 
@@ -991,7 +989,7 @@ h2 {
     max-width: 1920px;
     margin: 0 auto;
     column-gap: 3rem;
-    height: 90px;
+    height: 88px;
     position: fixed;
     z-index: 100000;
     margin:0;
@@ -1005,6 +1003,10 @@ h2 {
     position: relative;
     transition: .5s;
     background-color: var(--cuaternary-color);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
   }
   
   .menu-bar li:first-child .dropdown {
@@ -1051,6 +1053,7 @@ h2 {
     align-items: center;
     padding: 1.2rem;
     margin:0;
+    text-align: center;
   }
   
   .dropdown {
@@ -1151,6 +1154,8 @@ h2 {
       min-height: 100%;
       width: 100%;
       background-color: var(--cuaternary-color);
+      padding: 1.2rem;
+      text-align: center;
     }
   
     .menu-bar li:first-child ul:nth-child(1) {
@@ -1170,6 +1175,7 @@ h2 {
       opacity: 1;
       transform: none;
       box-shadow: none;
+      padding: 1.6rem;
     }
   
     .menu.show,
@@ -1196,6 +1202,7 @@ h2 {
       font-weight: 600;
       font-size: 1.2rem;
       margin: 0;
+      text-align: center;
     }
   
     .menu-bar li:first-child .dropdown {
@@ -1208,12 +1215,11 @@ h2 {
     }
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 600px){
     .right-container {
       display: none;
     }
   }
-
 
   .fade-in-section {
     opacity: 0;
