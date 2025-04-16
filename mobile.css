@@ -35,6 +35,9 @@ body {
     font-family: "Montserrat", sans-serif;
     z-index: 1000;
     background-color: var(--background-lightest);
+    background-image: url(./bgh.webp);
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 
@@ -248,7 +251,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 .333rem;
+    margin: 0 auto;
 }
 
 nav ul li a {
@@ -257,12 +260,7 @@ nav ul li a {
     background-color: transparent;
 }
 
-.dropdown {
-  display: none;
-}
-.dropdown.active {
-  display: block;
-}
+
 
 .hero{
     width:100%;
@@ -386,7 +384,7 @@ h1{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.333rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     margin: 1rem 0 0.5rem;
@@ -667,7 +665,7 @@ footer {
     width: 90%;
     height: auto;
     text-align: center;
-    margin: 4rem auto;
+    margin: 5.6rem auto;
     border-radius: 2.4rem;
     padding-top: .999rem;
     padding-bottom: .999rem;
@@ -683,12 +681,10 @@ footer {
 
 .bg--primary{
   background-image: url(./bgh.webp);
-  background-size: contain;
 }
 
 .bg--secondary{
   background-image: url(./bg2h.webp);
-  background-size: contain;
 }
 
 
@@ -998,8 +994,11 @@ h2 {
     height: 90px;
     position: fixed;
     z-index: 100000;
+    margin:0;
+    top:0;
     background-color: var(--cuaternary-color);
     transition: .5s;
+    
   }
   
   .menu {
@@ -1051,6 +1050,7 @@ h2 {
     display: flex;
     align-items: center;
     padding: 1.2rem;
+    margin:0;
   }
   
   .dropdown {
