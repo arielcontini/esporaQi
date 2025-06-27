@@ -38,6 +38,7 @@ body {
     background-image: url(./bgh.webp);
     background-size: contain;
     background-repeat: repeat;
+    position: relative;
   }
 
 
@@ -111,7 +112,7 @@ ul{
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 100;
+  z-index: 1;
 }
 
 .us--info{
@@ -241,7 +242,7 @@ ul{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    z-index: 100000;
+    z-index: 1;
     }
 
 nav ul {
@@ -359,7 +360,6 @@ h1{
   font-size: 1.2rem;
   color: var(--background-light);
   font-weight: 500;
-  text-align: center;
 }
 
 
@@ -992,7 +992,7 @@ h2 {
     column-gap: 3rem;
     height: 88px;
     position: fixed;
-    z-index: 100000;
+    z-index: 1000;
     margin:0;
     top:0;
     background-color: var(--cuaternary-color);
@@ -1051,8 +1051,8 @@ justify-content: center;
   .right-container,
   .right-container .search {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 1.2rem;
     margin:0;
     text-align: center;
   }
@@ -1065,7 +1065,7 @@ justify-content: center;
     border-bottom-right-radius: .333rem;
     position: absolute;
     top: 3.6rem;
-    z-index: 1;
+    z-index: 100000;
     visibility: hidden;
     opacity: 0;
     transform: scale(0.97) translateX(-5px);
@@ -1090,13 +1090,12 @@ justify-content: center;
   .dropdown-btn {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 0.15rem;
+    justify-content: center;
+    text-align: center;
   }
   
   .dropdown-link {
     display: flex;
-    gap: 0.5rem;
     border-radius: 7px;
     transition: 0.1s ease-in-out;
 
@@ -1123,6 +1122,7 @@ justify-content: center;
   
   .nav-link{
     background-color: var(--cuaternary-color);
+    text-align: center;
   }
   
   #hamburger {
@@ -1143,7 +1143,10 @@ justify-content: center;
     }
   
     .container {
-      padding: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .8rem;
       text-align: center;
     }
   
@@ -1162,6 +1165,7 @@ justify-content: center;
     .menu-bar li:first-child ul:nth-child(1) {
       border-right: none;
       border-bottom: var(--four-color);
+      text-align: center;
     }
   
     .dropdown {
@@ -1177,6 +1181,7 @@ justify-content: center;
       transform: none;
       box-shadow: none;
       padding: 1.6rem;
+      text-align: center;
     }
   
     .menu.show,
