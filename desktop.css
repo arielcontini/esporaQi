@@ -59,6 +59,7 @@ p {
         background-color: transparent;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     nav ul {
