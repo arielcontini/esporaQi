@@ -85,7 +85,7 @@ main{
 }
 
 .logo{
-  padding: .111rem;
+  padding: 1.6ßrem;
 }
 
 
@@ -1193,8 +1193,6 @@ background-color: var(--cuaternary-color);
     }
   
     .menu-bar .nav-link {
-      display: flex;
-      justify-content: space-between;
       width: 100%;
       font-weight: 600;
       font-size: 1.2rem;
