@@ -31,7 +31,6 @@ html{
 
 
 body {
-    margin: 0 auto;
     font-family: "Montserrat", sans-serif;
     z-index: 1000;
     background-color: var(--background-lightest);
@@ -85,7 +84,7 @@ main{
 }
 
 .logo{
-  padding: 1.6ßrem;
+  padding: .1rem;
 }
 
 
@@ -293,6 +292,8 @@ h1{
     font-family: "Montserrat", sans-serif;
     color: var(--primary-color);
     padding: 1.2rem;
+    line-height: 2.4rem;
+    text-align: center;
 }
 
 .hero h1 {
@@ -660,35 +661,33 @@ footer {
 
 
 .product{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
+  display: flex;
+  flex-direction: column;
+    width: 100%;
     height: auto;
-    text-align: center;
-    margin: 5.6rem auto;
-    border-radius: 2.4rem;
-    padding-top: .999rem;
-    padding-bottom: .999rem;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem;
+    margin: 4.8rem auto;
 }
 
-
-.product img{
-  border-radius: 1.2rem;
+.product article{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
 }
 
-
-
+.product article img{
+  border-radius: 1.6rem;
+}
 
 .bg--primary{
+  width: 100%;
+  height: auto;
   background-image: url(./bgh.webp);
   background-size: contain;
   background-repeat: repeat;
-}
-
-
-hr{
-    border-color: var(--background-light);
-    margin: .333rem;
 }
 
 
@@ -699,64 +698,99 @@ hr{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.333rem;
-    margin-bottom: 0.01rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem;
     color: var(--primary-color);
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    text-align: center;
 }
 
-.product .history div{
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  padding: .333rem .888rem;
-  text-align: left;
-  font-size: .999rem; 
+.history{
+  width: 100%;
+  height: auto;
+    padding: .8rem;
 }
 
-.product .citas div{
+.history--text{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  padding: .333rem .888rem;
   text-align: left;
-  font-size: .999rem; 
+  font-size: .8rem; 
+  padding: .8rem;
+}
+
+.citas{
+  width: 100%;
+  height: auto;
+  padding: .8rem;
+}
+
+.citas--text{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: left;
+  font-size: .8rem; 
   font-style: italic;
 }
 
 
+.benefits{
+  width: 100%;
+  height: auto;
+  padding: .8rem;
+}
 
-.product .benefits div ul{
+.benefits--text{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    padding: 1rem;
     text-align: left;
-    
+    font-size: .8rem; 
+    padding: .8rem;
+}
+
+.dosage{
+  width: 100%;
+  height: auto;
+    padding: .8rem;
 }
 
 
-.product .dosage div p{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: .333rem .888rem;
-    text-align: left;
-    font-size: .999rem;
+.dosage--text{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: .8rem; 
 }
 
-.product .note div p{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 1rem;
-    text-align: left;
-    font-size: .999rem;
+.note{
+  width: 100%;
+  height: auto;
+    padding: .8rem;
 }
 
-.product .instructions div ul{
+.note--text{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    padding: 1rem;
-    text-align: left;
-    font-size: .999rem;
+  font-size: .8rem; 
+    padding: .8rem;
 }
+
+
+.instructions{
+  width: 100%;
+  height: auto;
+    padding: .8rem;
+}
+
+.instructions--text{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: .8rem; 
+}
+
+
+
+
+
+
 
 /* testimonios */
 
@@ -950,6 +984,12 @@ h2 {
 
 /* navbar */
 
+
+header {
+  padding: 0;
+  margin: 0 auto;
+}
+
   button {
     border: none;
     background-color: transparent;
@@ -980,7 +1020,7 @@ h2 {
     border-bottom: var(--border);
   }
   
-  .container {
+  .container{
     display: flex;
     flex-direction: grid;
     align-items: center;
@@ -988,15 +1028,16 @@ h2 {
     width: 100%;
     margin: 0 auto;
     height: auto;
-    padding: .8rem 0;
+    padding: .8rem;
     position: fixed;
     z-index: 1000;
     background-color: var(--cuaternary-color);
     transition: .5s;
+    top: 0;
   }
   
 .menu{
-padding: 0 0;
+padding: 0;
 margin: 0 auto;
 transition: .5s;
 background-color: var(--cuaternary-color);
@@ -1044,10 +1085,24 @@ background-color: var(--cuaternary-color);
   .right-container,
   .right-container .search {
     display: flex;
+    flex-direction: grid;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     text-align: center;
+    padding-bottom: .1rem;
+  }
+
+
+  .back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: .16rem;
+    margin: 0 auto;
   }
   
   .dropdown{
@@ -1133,7 +1188,7 @@ background-color: var(--cuaternary-color);
 
 
   
-  @media (max-width: 1100px) {
+  @media (max-width: 1024px) {
 
     #hamburger {
       display: block;
@@ -1210,11 +1265,7 @@ background-color: var(--cuaternary-color);
     }
   }
   
-  @media (max-width: 600px){
-    .right-container {
-      display: none;
-    }
-  }
+
 
   .fade-in-section {
     opacity: 0;

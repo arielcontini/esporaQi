@@ -7,19 +7,17 @@ body{
 
 
 main{
-    margin: 0 auto;
-    padding: 0;
-    background-color: var(--background-lightest);
+    background-color: transparent;
 }
 
+
 p {
-    font-family: "ontserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    text-align: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
     margin: 0 auto;
   }
 
@@ -260,81 +258,6 @@ line-height: 2.4rem;
     }
   
 
-.product{
-width: 50%;
-height: auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin: 6.4rem auto;
-}
-
-.product--text{
-font-size: 1.2rem;
-padding: 1rem;
-margin: 0 auto;
-}
-
-.product--img{
-display: flex;
-flex-direction: column;
-width: 100%;
-height: auto;
-border-radius: 2.4rem;
-margin: 0 auto;
-padding: 0;
-}
-
-.product .benefits div ul{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 1rem;
-    text-align: left;
-}
-
-.product .history div{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: .333rem .888rem;
-    text-align: left;
-    font-size: .999rem; 
-}
-
-.product .citas div{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: .333rem .888rem;
-    text-align: left;
-    font-size: .999rem; 
-}
-
-
-
-
-.product .dosage div p{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: .333rem .888rem;
-    text-align: left;
-    font-size: .999rem;
-}
-
-.product .note div p{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 1rem;
-    text-align: left;
-    font-size: .999rem;
-}
-
-.product .instructions div ul{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 1rem;
-    text-align: left;
-    font-size: .999rem;
-}
 
 
 
@@ -624,3 +547,34 @@ color: var(--four-color);
           font-size: .999rem;
           color: var(--text-color);
       }
+
+      .product{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+        background-color: transparent;
+        place-content: center;
+        padding: .8rem;
+      }
+
+      .product article{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+      }
+
+
+.history--text, .benefits--text, .citas--text, .dosage--text, .instructions--text, .note--text{
+  padding: .1rem;
+  text-align: left;
+}
+
+.history, .benefits, .citas, .dosage, .instructions, .note{
+  display: flex;
+  flex-direction: column;
+  padding: .1rem;
+}
+
