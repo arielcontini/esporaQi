@@ -1,32 +1,27 @@
 @media (min-width: 1024px){
 
-body{
-    margin: 0 auto;
+*{
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
 main{
-    background-color: transparent;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: var(--background-darker);
 }
 
 
-p {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    margin: 0 auto;
-  }
+
 
     .logo-esporaqi{
-        width: 40%;
-        min-width: 320px;
+        width: 100%;
+        min-width: 480px;
         height: auto;
-        top:6.4rem;
-        min-height: 160px;
+        top:9.6rem;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -57,7 +52,6 @@ p {
         background-color: transparent;
         align-items: center;
         justify-content: center;
-        text-align: center;
     }
 
     nav ul {
@@ -90,34 +84,26 @@ p {
     .section--text{
         display:flex;
         flex-direction: column;
-        width: 40%;
+        width: 30%;
         height: auto;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        padding: .333rem 0;
+        padding: .111rem 0;
         align-items: center;
         justify-content: center;
         }
 
     .hero{
         width:100%;
-        height: 800px;
+        height: 720px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        color: var(--text-color);
         margin: 0 auto;
-        /* background-image: url(./bg.webp); */
-        background-size: cover;
-        background-position: center;
-    }
-    .hero h1 {
-        font-size: 4.8rem;
-        color: var(--background-light);
-        text-shadow: .20rem .20rem .25rem var(--background-dark); 
+        padding: .8rem;
     }
 
     .productos{
@@ -128,7 +114,8 @@ p {
         padding: 1.2rem;
         overflow-x: hidden;
         overscroll-behavior-x: contain;
-        scroll-snap-type:y proximity;
+        justify-content: center;
+        align-items: center;
     }
 
     .productos-grid{
@@ -137,7 +124,7 @@ p {
         min-width: 320px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 1.2rem;
+        gap: 1.6rem;
         padding: 0;
     }
 
@@ -145,38 +132,11 @@ p {
     .producto{
         width: 100%;
         height: auto;
-        min-width: 200px;
-        min-height: 200px;
+        min-width: 240px;
         margin: 0 auto;
-        background-color: rgb(255, 249, 213);
         border-radius: 1.2rem;
-        padding: 0;
     }
 
-
-
-    
-    .wsp-button{
-        width: 30%;
-        height: auto;
-        padding: .333rem;
-        margin: 0 auto;
-        background-color: transparent;
-        border: .001rem solid var(--four-color);
-        border-radius: 1.1rem;
-        transition: .5s;
-    }
-    
-    .wsp-button:hover{
-        width: 28%;
-        height: auto;
-        padding: .333rem;
-        margin: 0 auto;
-        background-color: transparent;
-        border: .001rem solid var(--four-color);
-        border-radius: 1.1rem;
-        transition: .2s;
-    }
 
     /*  VENTAS */ 
 .ventas--section{
@@ -184,13 +144,23 @@ p {
     flex-direction: column;
     width: 100%;
     height: auto;
-    min-height: 360px;
     margin: 0 auto;
     background-color: var(--four-color);
     color: var(--background-lightest);
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  align-items: center;
+ justify-content: center;
+    z-index: 1;
+}
+
+.venta-grid-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    color: var(--background-lightest);
+    place-content: center;
+    justify-items: center;
     z-index: 1;
 }
 
@@ -198,29 +168,30 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 320px;
-    max-width: 900px;
+    max-width: 480px;
     height: auto;
     align-items: center;
     justify-content: center;
-    padding: 1rem .444rem;
+    text-align: center;
 }
 
 .boton-atras{
-width: 32px;
+width: 16px;
 height: auto;
 }
 
 .venta--info{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 320px;
     height: auto;
-    margin: 0 auto;
-    color: var(--background-lightest);
+    margin: .8rem auto;
+    color: var(--background-light);
     text-align: center;
-    border-radius: 1.2rem;
-    padding: .999rem;
+    border-radius: .8rem;
+    backdrop-filter: blur(16px);
+    align-items: center;
+    justify-content: center;
  
 }
 
@@ -235,11 +206,11 @@ height: auto;
 
 .venta--info div h3{
 margin: 0 auto;
-font-size: 2.8rem;
+font-size: var(--h3);
 }
 .venta--info div p{ 
-font-size: 1.6rem;
-line-height: 2.4rem;
+font-size: var(--p);
+line-height: 1.2rem;
 }
 
 .venta--info div a{
@@ -248,9 +219,9 @@ line-height: 2.4rem;
     align-items: center;
     justify-content: center;
     margin: 1.4rem auto; 
-    width: 50%;
+    width: 66%;
     height: auto;
-    font-size: 1.2rem;
+  font-size: var(--p);
     padding: .999rem;
     background-color: transparent;
     border: .111rem solid var(--background-light);
@@ -293,15 +264,15 @@ line-height: 2.4rem;
 }
 
 .catalogo--info h2{
-font-size: 2.4rem;
+font-size: var(--h2);
 margin: 0 auto;
 padding: 1.2rem;
 }
 
 .catalogo--info p{
-    font-size: 1.4rem;
+font-size: var(--p);
     margin: 0 auto;
-    padding: 3.2rem .666rem;
+    padding: 2.4rem .666rem;
     }
     
 .catalogo--download{
@@ -320,21 +291,22 @@ padding: 1.2rem;
 /* testimonios */
 
 .testimonial-slider {
-    max-width: 100%;
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
-    padding: 1rem .333rem;
-    border: .0333rem solid var(--primary-color);
-    border-radius: .111rem;
-    background-color: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
 .testimonial-slider h2{
 font-family: "Montserrat", sans-serif;
-font-size: 1.666rem;
+font-size: var(--h2);
 display: flex;
 flex-direction: column;
 margin: 0 auto;
-padding: .111rem;
 align-items: center;
 justify-content: center;
 }
@@ -342,27 +314,44 @@ justify-content: center;
 
 .testimonial-slider h3{
 font-family: "Montserrat", sans-serif;
-font-size: 1.333rem;
+font-size: var(--h3);
 display: flex;
 flex-direction: column;
 margin: 0 auto;
-padding: .333rem;
 align-items: center;
 justify-content: center;
 }
 
 .testimonial-slider p{
   font-family: "Montserrat", sans-serif;
-  font-size: 1.66rem;
+font-size: var(--p);
 display: flex;
 flex-direction: column;
 margin: 0 auto;
-padding: .111rem .111rem;
+align-items: center;
+justify-content: center;
+width: 40%;
+height: auto;
+line-height: 1.6rem;
+}
+
+.testimonial-slider strong{
+  font-family: "Montserrat", sans-serif;
+font-size: var(--p);
+display: flex;
+flex-direction: column;
+margin: 0 auto;
 align-items: center;
 justify-content: center;
 width: 50%;
 height: auto;
-line-height: 2.4rem;
+line-height: 2rem;
+}
+
+
+.slider--buttons{
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-container {
@@ -372,12 +361,11 @@ overflow: hidden;
   
 .slider {
 display: flex;
-transition: transform 0.5s ease;
+transition: transform 0.9s ease;
 }
   
 .testimonial {
 flex: 0 0 100%;
-padding: 1.9rem;
 text-align: center;
 width: 100%;
 height: auto;
@@ -388,7 +376,7 @@ width: 24%;
 max-width: 555px;
 height: auto;
 border-radius: 50%;
-margin-bottom: 1rem;
+margin-bottom: .1rem;
 aspect-ratio: 1 / 1;
 object-fit: cover;
 z-index: 100;
@@ -424,15 +412,16 @@ color: var(--four-color);
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   
   .us--info{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 44%;
     height: auto;
     margin: 0 auto;
-    padding: 2.4rem;
+    padding: .8rem;
   }
   
 
@@ -446,13 +435,12 @@ color: var(--four-color);
   
 
   .us--info p{
-    font-size: 1.4rem;
+ font-size: var(--p);
     text-align: left;
     text-justify: auto;
     margin: 0 auto;
-    padding: .666rem;
     color: var(--background-light);
-    line-height: 2.4rem;
+    line-height: 1.2rem;
     }
 
 
@@ -485,38 +473,93 @@ color: var(--four-color);
   }
 
 
-  .medicina{
-    background-color: var(--background-lightest);
-  }
 
+
+  .productos--img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    height: 640px;
+    margin: 0 auto;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
 
   footer{
     z-index: 10;
   }
 
+
+
+
+
+  .contact--us{
+    width: 100%;
+    height: auto;
+    padding: .8rem;
+    text-align: center;
+  }
+
+  .contact--us a{
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+    background-color: var(--primary-color);
+    color: var(--background-light);
+    padding: .8rem;
+    border: none;
+  }
+
+
+
+
+  .contacto{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacto a{
+    width: 100%;
+    height: auto;
+  }
+
+
     h2 {
-      font-size: 2rem;
+   font-size: var(--h2);
       margin-bottom: 1rem;
     }
     
   
     .info--adaptogenos img{
         width: 100%;
-        max-height: 320px;
         height: auto;
         display: flex;
         flex-direction: column;
-        padding-top:2.4rem;
-        padding-bottom: 2.4rem;
       }
       
+      .info--adaptogenos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 4rem;
+        margin: 0 auto;
+      }
       
       .info--adaptogenos article{
-        width: 66%;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
+        background-color: transparent;
       }
       
       .info--adaptogenos h2{
@@ -524,7 +567,7 @@ color: var(--four-color);
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
-        font-size: 1.4rem;
+    font-size: var(--h2);
         color: var(--primary-color);
       }
       
@@ -533,19 +576,17 @@ color: var(--four-color);
         font-optical-sizing: auto;
         font-weight: 600;
         font-style: normal;
-        font-size: 1.3rem;
+    font-size: var(--h3);
         color: var(--primary-color);
-        padding-top: .999rem;
-        padding-bottom: .999rem;
       }
       
-      .info--adaptogenos p{
+      .info--adaptogenos article p{
           font-family: "Montserrat", sans-serif;
           font-optical-sizing: auto;
           font-weight: 400;
           font-style: normal;
-          font-size: .999rem;
-          color: var(--text-color);
+          font-size: var(--p);
+          color: var(--background-dark);
       }
 
       .product{
@@ -556,7 +597,7 @@ color: var(--four-color);
         height: auto;
         background-color: transparent;
         place-content: center;
-        padding: .8rem;
+        padding: 2.4rem 0;
       }
 
       .product article{
@@ -564,17 +605,31 @@ color: var(--four-color);
         flex-direction: column;
         width: 100%;
         height: auto;
+        margin: 0.8rem auto;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(245, 222, 179, 0.666);
+        backdrop-filter: blur(16px);
+        border-radius: .8rem;
+      }
+      .product article img{
+        width: 100%;
+        height: auto;
+        background-color: transparent;
       }
 
 
+
+
+
 .history--text, .benefits--text, .citas--text, .dosage--text, .instructions--text, .note--text{
-  padding: .1rem;
+  padding: .8rem;
   text-align: left;
 }
 
 .history, .benefits, .citas, .dosage, .instructions, .note{
   display: flex;
   flex-direction: column;
-  padding: .1rem;
+  padding: .8rem;
 }
 

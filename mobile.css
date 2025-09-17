@@ -14,6 +14,11 @@
     --background-lightest:#fffae8;
     --background-dark: #1a1a1a;
     --background-darker: #0000003a;
+
+    --h1: 3.2rem;
+    --h2: 1.6rem;
+    --h3: 1.2rem;
+    --p: .8rem;
 }
 
 
@@ -21,7 +26,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    line-height: 1.2rem;
 }
 
 html{
@@ -33,54 +37,52 @@ html{
 body {
     font-family: "Montserrat", sans-serif;
     z-index: 1000;
-    background-color: var(--background-lightest);
-    background-image: url(./bgh.webp);
-    background-size: contain;
-    background-repeat: repeat;
     position: relative;
   }
 
 
-#myVideo {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
+#myVideo{
+  width: 100%;
+  height: auto;
+  min-height: 720px;
+  object-fit: cover;
+  top: 0;
+  position: absolute;
   z-index: -1;
   opacity: 1;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 
 
-main{
-    margin: 0;
-    padding: 0;
-    z-index: 10;
+.section--title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem;
 }
 
-.info--adaptogenos--text{
-    color: var(--background-light);
-}
+
 
 .bx-chevron-down
 {
     color: var(--background-lightest);
-    font-size: 1.6rem;
+    font-size: var(--p);
     font-weight: 600;
 }
 
 .logo-esporaqi{
   width: 100%;
-  max-width: 640px;
+  max-width: 400px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 100;
+  padding: .8rem;
 }
 
 .logo{
@@ -136,13 +138,13 @@ ul{
 }
 
 .us--info p{
-  font-size: 1.2rem;
+  font-size: var(--p);
   text-align: left;
   text-justify: auto;
   margin: 0 auto;
   padding: 1.2rem;
   color: var(--background-light);
-  line-height: 1.6rem;
+  line-height: 1.2rem;
   }
   
 .us--download{
@@ -160,7 +162,7 @@ ul{
 .us--section a{
   width: 100%;
   height: auto;
-  padding: 1.2rem;
+  padding: .8rem;
   margin: 0 auto;
   border:none;
   border-radius: 1.2rem;
@@ -190,7 +192,7 @@ ul{
 }
 
 .catalogo--info p{
-    font-size: 1.2rem;
+  font-size: var(--p);
     margin: 0 auto;
     padding: 1.2rem;
     }
@@ -207,9 +209,10 @@ ul{
 }
 
 .producto button{
-    padding: 1rem 1.8rem;
+    padding: .8rem .8rem;
     width: 100%;
     height: auto;
+    border-radius: .8rem;
 }
 
 .producto img{
@@ -233,16 +236,6 @@ ul{
     height: auto;
 }
 
-.section--text{
-    display:flex;
-    flex-direction: column;
-    width: 70%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    z-index: 1;
-    }
 
 nav ul {
     display: flex;
@@ -263,14 +256,13 @@ nav ul li a {
 
 .hero{
     width:100%;
-    height: 720px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    padding: 1rem 1rem;
     margin: 0 auto;
     background-color: var(--background-darker);
   }
@@ -288,7 +280,7 @@ nav ul li a {
 }
 
 h1{
-    font-size: 2.4rem;
+    font-size: var(--h1);
     font-family: "Montserrat", sans-serif;
     color: var(--primary-color);
     padding: 1.2rem;
@@ -297,7 +289,7 @@ h1{
 }
 
 .hero h1 {
-    font-size: 2.4rem;
+    font-size: var(--h1);
     font-family: "Montserrat", sans-serif;
     color: var(--background-light);
     text-shadow: .20rem .20rem .25rem var(--background-dark); 
@@ -308,13 +300,28 @@ h1{
     flex-direction: row;
     width: 100%;
     min-width: 320px;
-    min-height: 200px;
+    min-height: 160px;
     height: auto;
     text-align: center;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type:y proximity;
-    background-color: var(--background-lightest);
+  background-color: var(--background-light);
+}
+
+.productos--title{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-light);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.productos--img{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .productos h2{
@@ -322,7 +329,7 @@ h1{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.333rem;
+    font-size: var(--h2);
     margin-top: 2.4rem;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
@@ -337,9 +344,10 @@ h1{
 .productos-grid {
   display: flex;
   flex-direction: row;
+  gap: .8rem;
   width: 100%;
   min-width: 1024px;
-  min-height: 640px;
+  min-height: 480px;
   height: auto;
 }
 
@@ -357,7 +365,7 @@ h1{
   height: auto;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: var(--p);
   color: var(--background-light);
   font-weight: 600;
 }
@@ -367,17 +375,22 @@ h1{
   width: 100%;
   height: auto;
   min-width: 320px;
-  min-height: 420px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 3.2rem;
-  padding: .333rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  background-color: rgba(255, 241, 191, 0.763);
+  backdrop-filter: blur(16px);
+  border-radius: 1.6rem;
 }
+
+
 
 .productos--img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: .8rem;
 }
 
 .producto h2 {
@@ -385,31 +398,40 @@ h1{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.6rem;
+    font-size: var(--h2);
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: var(--primary-color);
+}
+
+.producto h3 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--h3);
+    margin-bottom: 0.5rem;
     margin: 1rem 0 0.5rem;
     color: var(--primary-color);
 }
 
 .producto p {
   height: auto;
-  min-height: 150px;
+  min-height: 100px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: var(--p);
     margin-bottom: 0.5rem;
-    padding: 0 1rem;
-    margin-bottom: 1rem;
+    padding: 0 .8rem;
     color: var(--text-color);
 }
 
 .producto button {
     background-color: var(--primary-color);
     color: var(--background-light);
-    padding: 1rem;
+    padding: .8rem;
     cursor: pointer;
 }
 
@@ -419,8 +441,9 @@ h1{
 
 .wsp-button{
     width: 100%;
+    max-width: 240px;
     height: auto;
-    padding: .333rem;
+    padding: .1rem;
     margin: 0 auto;
     background-color: transparent;
     border: .001rem solid var(--four-color);
@@ -428,43 +451,20 @@ h1{
     transition: .5s;
 }
 
-.wsp-button:hover{
-    width: 90%;
-    height: auto;
-    padding: .333rem;
-    margin: 0 auto;
-    background-color: transparent;
-    border: .001rem solid var(--four-color);
-    border-radius: 1.1rem;
-    transition: .2s;
-}
-
 /*  VENTAS */ 
 .ventas--section{
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 320px;
     height: auto;
-    padding: 2.22rem;
     margin: 0 auto;
-    background-color: var(--four-color);
-    color: var(--background-lightest);
+    color: var(--background-dark);
     text-align: center;
     justify-content: center;
     align-items: center;
     z-index: 100;
-}
-
-
-.section--title{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 285px;
-    max-width: 1024px;
-    height: auto;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--four-color);
 }
 
 .venta--section div h3{
@@ -472,7 +472,7 @@ h1{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.99rem;
+    font-size: var(--h3);
     line-height: 2.4rem;
 }
 
@@ -481,8 +481,8 @@ h1{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
+    font-size: var(--p);
+    line-height: 1.2rem;
 }
 
 
@@ -494,17 +494,17 @@ height: auto;
 
 
 .venta--info{
-    display: flex;
+        display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 1.6rem .111rem;
-    margin: 0 auto;
-    color: var(--background-lightest);
+    margin: .8rem auto;
+    color: var(--background-light);
     text-align: center;
-    border-radius: 1.2rem;
-    border-top: 1.2rem; /* corrected from 1.2rems to 1.2rem */
-    border-color: var(--background-lightest);
+    border-radius: .8rem;
+    backdrop-filter: blur(16px);
+    place-content: center;
+
 }
 
 .venta--info div{
@@ -518,11 +518,11 @@ height: auto;
 
 }
 .venta--info h3{
-font-size: 1.8rem;
+font-size: var(--h3);
 padding: .111rem .111rem;
 }
 .venta--info p{ 
-font-size: 1.2rem;
+font-size: var(--p);
 padding: 1.2rem .111rem;
 }
 
@@ -534,11 +534,11 @@ padding: 1.2rem .111rem;
     margin: 0 auto; 
     width: 100%;
     height: auto;
-    font-size: 1.2rem;
+    font-size: var(--p);
     background-color: transparent;
     border: .111rem solid var(--background-light);
     border-radius: .999rem;
-    padding: 1.2rem;
+    padding: .8rem;
     }
 
 
@@ -561,29 +561,28 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1.8rem 2.4rem;
     text-align: center;
 }
 
 .footer-top h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+    font-size: var(--h2);
     color: var(--tertiary-color);
     padding: .333rem;
 }
 
 .footer-top h3 {
     font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-size: var(--h3);
     color: var(--tertiary-color);
     padding: .999rem;
 }
 
 .footer-top p {
     font-family: "Montserrat", sans-serif;
-    font-size: 0.9rem;
+    font-size: var(--p);
     color: var(--accent-color);
-    padding: .999rem;
+    padding: .8rem;
 }
 
 .footer-middle {
@@ -604,15 +603,15 @@ footer {
 
 .feature p {
     font-family: "Montserrat", sans-serif;
-    font-size: 0.8rem;
+    font-size: var(--p);
     margin-top: 0.5rem;
     color: var(--accent-color);
 }
 
 .footer-bottom {
     text-align: center;
-    font-size: 0.8rem;
-    padding: 1.2rem;
+    font-size: var(--p);
+    padding: .8rem;
 }
 
 .footer-bottom p{
@@ -629,8 +628,8 @@ footer {
 }
 
 .social-media img {
-    width: 44px;
-    height: 44px;
+    width: 32px;
+    height: 32px;
     margin: 0 0.5rem;
 }
 
@@ -640,11 +639,10 @@ footer {
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: .333rem;
 }
 
 .contacto h3{
-    font-size: 1.666rem;
+    font-size: var(--h3);
     line-height: 2.4rem;
     font-family: "Montserrat", sans-serif;
 }
@@ -667,9 +665,58 @@ footer {
     height: auto;
     align-items: center;
     justify-content: center;
-    padding: .8rem;
-    margin: 4.8rem auto;
+    margin: 0 auto;
+    background-color: transparent;
 }
+
+
+.aceite-de-cannabis{
+  background: url(./cannabis-pic.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.psilocibina{
+  background: url(./psilocybe-pic.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cordyceps{
+  background: url(./cordyceps-pic.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.melena-de-leon{
+    background: url(./melena-de-leon-pic.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fungi-mix{
+    background: url(./fungi-mix.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reishi{
+     background: url(./reishi-pic.webp);
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.shiitake{
+      background: url(./shiitake-pic.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.trametes-versicolor{
+      background: url(./trametes-pic.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 .product article{
   display: flex;
@@ -685,23 +732,45 @@ footer {
 .bg--primary{
   width: 100%;
   height: auto;
-  background-image: url(./bgh.webp);
   background-size: contain;
   background-repeat: repeat;
 }
 
-
-
-
-.product h2{
+.product article h1{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: var(--h1);
     margin-bottom: 0.1rem;
     color: var(--primary-color);
     text-align: center;
+    line-height: 3.2rem;
+}
+
+
+.product article h2{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--h2);
+    margin-bottom: 0.1rem;
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+.product article h3{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: var(--h3);
+    margin-bottom: 0.1rem;
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 1.6rem;
 }
 
 .history{
@@ -714,21 +783,22 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-align: left;
-  font-size: .8rem; 
+  font-size: var(--p); 
   padding: .8rem;
 }
 
 .citas{
   width: 100%;
   height: auto;
-  padding: .8rem;
+  padding: 1.6rem;
+  margin: 0 auto;
 }
 
 .citas--text{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-align: left;
-  font-size: .8rem; 
+  font-size: var(--p); 
   font-style: italic;
 }
 
@@ -736,40 +806,42 @@ footer {
 .benefits{
   width: 100%;
   height: auto;
-  padding: .8rem;
+  padding: 1.6rem;
+  margin: 0 auto;
 }
 
 .benefits--text{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-align: left;
-    font-size: .8rem; 
+    font-size: var(--p); 
     padding: .8rem;
 }
 
 .dosage{
   width: 100%;
   height: auto;
-    padding: .8rem;
+    padding: 1.6rem;
+  margin: 0 auto;
 }
 
 
 .dosage--text{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: .8rem; 
+  font-size: var(--p); 
 }
 
 .note{
   width: 100%;
   height: auto;
-    padding: .8rem;
+  padding: .8rem;
 }
 
 .note--text{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-  font-size: .8rem; 
+  font-size: var(--p); 
     padding: .8rem;
 }
 
@@ -783,7 +855,7 @@ footer {
 .instructions--text{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: .8rem; 
+    font-size: var(--p); 
 }
 
 
@@ -795,16 +867,18 @@ footer {
 /* testimonios */
 
 .testimonial-slider {
+  display: flex;
+  flex-direction: column;
     max-width: 100%;
     margin: 0 auto;
-    padding: 1rem .111em;
+    padding: .8rem .222em;
     border-radius: .111rem;
     background-color: var(--cuaternary-color);
   }
 
 .testimonial-slider h3{
 font-family: "Montserrat", sans-serif;
-font-size: 1.222rem;
+font-size: var(--h3);
 font-weight: 600;
 display: flex;
 flex-direction: column;
@@ -817,7 +891,7 @@ text-align: center;
 
 .testimonial-slider p{
 font-family: "Montserrat", sans-serif;
-font-size: 1.2rem;
+font-size: var(--p);
 display: flex;
 flex-direction: column;
 margin: 0 auto;
@@ -828,6 +902,21 @@ color: var(--background-light);
 width: 90%;
 height: auto;
 }
+
+.testimonial-slider strong{
+font-family: "Montserrat", sans-serif;
+font-size: var(--p);
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+padding: .111rem;
+align-items: center;
+justify-content: center;
+color: var(--background-light);
+width: 90%;
+height: auto;
+}
+
 
 .slider-container {
 display: flex;
@@ -871,28 +960,28 @@ color: var(--four-color);
 .next, .prev {
 top: 100%;
 cursor: pointer;
-padding: 1.2rem;
+padding: .1rem;
 }
 
 .next img{
-  width: 56px;
+  width: 40px;
   height: auto;
 }
   
 .prev img{
-  max-width: 56px;
+  max-width: 40px;
   height: auto;
 }
   
 
 .prev {
-display: inline-block;
-padding: .8rem;
+    display: block;
+padding: .1rem;
 }
   
 .next {
-  display: inline-block;
-  padding: .8rem;
+  display: block;
+  padding: .1rem;
 }
 
 
@@ -901,7 +990,8 @@ padding: .8rem;
   flex-direction: grid;
   place-content: center;
 width: 100%;  
-  padding: .8rem;
+height: auto;
+  padding: .1rem;
 }
   
 
@@ -909,15 +999,10 @@ width: 100%;
 
 .info--adaptogenos{
 width: 100%;
+min-width: 320px;
+max-width: 640px;
 height: auto;
-background-color: var(--background-light);
 margin: 0 auto;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding-top: 4.8rem;
-padding-bottom:4.8rem ;
 }
 
 
@@ -952,7 +1037,7 @@ padding-bottom:4.8rem ;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.333rem;
+  font-size: var(--h2);
   color: var(--primary-color);
 }
 
@@ -961,8 +1046,9 @@ padding-bottom:4.8rem ;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: var(--h3);
   color: var(--primary-color);
+  padding: .8rem 0;
 }
 
 .info--adaptogenos article p{
@@ -970,13 +1056,13 @@ padding-bottom:4.8rem ;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: .999rem;
+    font-size: var(--p);
     color: var(--text-color);
 }
 
 
 h2 {
-  font-size: 2rem;
+  font-size: var(--h2);
   margin-bottom: 1rem;
 }
 
@@ -1002,7 +1088,7 @@ header {
     color: var(--white);
     text-align: center;
     padding: 0.6rem 1.4rem;
-    font-size: 1rem;
+    font-size: var(--p);
     font-weight: 500;
     border-radius: 5px;
   }
@@ -1028,19 +1114,24 @@ header {
     width: 100%;
     margin: 0 auto;
     height: auto;
-    padding: .8rem;
     position: fixed;
     z-index: 1000;
     background-color: var(--cuaternary-color);
     transition: .5s;
     top: 0;
+    padding: .8rem;
   }
   
 .menu{
-padding: 0;
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: grid;
 margin: 0 auto;
 transition: .5s;
-background-color: var(--cuaternary-color);
+align-items: center;
+justify-content: center;
+text-align: center;
   }
   
   .menu-bar li:first-child .dropdown {
@@ -1065,10 +1156,10 @@ background-color: var(--cuaternary-color);
   }
   
   .menu-bar .nav-link {
-    font-size: 1.2rem;
+    font-size: var(--p);
     font-weight: 500;
     letter-spacing: -0.6px;
-    min-width: 6rem;
+    min-width: 6.4rem;
     color: var(--background-light);
     background-color: var(--cuaternary-color);
   }
@@ -1089,7 +1180,6 @@ background-color: var(--cuaternary-color);
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: .1rem;
   }
 
 
@@ -1111,7 +1201,7 @@ background-color: var(--cuaternary-color);
     position: absolute;
     left: 0;
     right: 0;
-    top: 5.6rem;
+    top: 4.8rem;
     z-index: 100000;
     visibility: hidden;
     opacity: 0;
@@ -1134,7 +1224,7 @@ background-color: var(--cuaternary-color);
     align-items: center;
    justify-content: center;
     gap: 0.95rem;
-    font-size: 1rem;
+    font-size: var(--p);
     background-color: var(--cuaternary-color);
     text-align: center;
   }
@@ -1154,7 +1244,7 @@ background-color: var(--cuaternary-color);
   }
   
   .dropdown-link p {
-    font-size: 0.8rem;
+    font-size: var(--p);
     color: var(--background-light);
   }
   
@@ -1181,12 +1271,12 @@ background-color: var(--cuaternary-color);
     display: none;
     padding: 0.111rem;
     margin-left: 1rem;
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: var(--background-light);
   }
 
 
-
+/* BURGUER MENU */
   
   @media (max-width: 1024px) {
 
@@ -1242,7 +1332,7 @@ background-color: var(--cuaternary-color);
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      row-gap: 1rem;
+      row-gap: .111rem;
       padding: 1rem;
       text-align: center;
     }
@@ -1250,7 +1340,7 @@ background-color: var(--cuaternary-color);
     .menu-bar .nav-link {
       width: 100%;
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: var(--p);
       margin: 0 auto;
       text-align: center;
     }

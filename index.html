@@ -29,11 +29,9 @@
 
         <div class="nav-start">
           <a class="logo" href="#nav-menu">
-            <img src="./logo.svg" width="35" height="35" alt="Isologotipo de Espora Qí" />
+            <img src="../logo.svg" width="35" height="35" alt="Isologotipo de Espora Qí" />
           </a>
           <nav class="menu">
-
-            
             <ul class="menu-bar" id="navMenu">
               <li>
                 <a class="nav-link" href="#nav-menu">Inicio</a>
@@ -53,7 +51,7 @@
                 <div id="dropdown2" class="dropdown">
                   <ul role="menu">
                     <li role="menuitem">
-                      <a class="dropdown-link" href="#microdosis">Psilocybina</a>
+                      <a class="dropdown-link" href="#microdosis">Psilocibina</a>
                     </li>
                     <li role="menuitem">
                       <a class="dropdown-link" href="#cordyceps">Cordyceps</a>
@@ -68,7 +66,7 @@
                       <a class="dropdown-link" href="#shiitake">Shiitake</a>
                     </li>
                     <li role="menuitem">
-                      <a class="dropdown-link" href="#trametes-versicolor">Trametes Versicolor</a>
+                      <a class="dropdown-link" href="#trametes-versicolor">Cola de Pavo</a>
                     </li>
                     <li role="menuitem">
                       <a class="dropdown-link" href="#fungi-mix">Fungi Mix</a>
@@ -92,7 +90,7 @@
               </li>
               <li>
                 <a class="social-media" href="https://www.instagram.com/esporaqi/" target="_blank">
-                  <img width="100" height="100" src="./ig.svg" alt="Instagram">
+                  <img width="100" height="100" src="../ig.svg" alt="Instagram">
                 </a>
               </li>
             </ul>
@@ -111,18 +109,23 @@
     </header>
 
     <main class="animate__animated animate__fadeIn">
+
 <!-- The video -->
-<video autoplay muted loop id="myVideo">
-  <source src="./esporaqi-crudito.webm" type="video/mp4">
-</video>
+
 
       <section id="portada" class="hero">
-        <img src="./espora.svg" class="logo-esporaqi" width="640px" height="160px">
+        <img src="./espora.svg" class="logo-esporaqi" width="32px" height="160px">
+
+<video autoplay muted loop id="myVideo" class="video-background">
+<source src="./espora.webm" type="video/mp4">
+</video>
       </section>
 
 
-      <section id="historia" class="us--section text-container">
-        <img src="./historia.svg" width="320px" height="100px" class="section--text reveal">
+      <section id="historia" class="us--section">
+
+        <img src="./historia.svg" width="320px" height="100px" class="section--title reveal">
+        
         <article class="us--info text-box reveal">  
           <p>Espora Qí es parte de un micelio medicina que está en expansión, queremos compartir nuestra experiencia de investigación, producción y acompañamiento en relacion a los hongos y plantas medicinales.</p>
           <p>Trabajamos hace más de 10 años con plantas y hongos medicinales y sus acompañamientos.</p>
@@ -130,7 +133,7 @@
           <p>Nuestros productos son elaborados artesanalmente en nuestro laboratorio, con materia de primera calidad, orgánica. Intencionados para brindar el equilibrio dentro del cuerpo físico, mental y espiritual.. mejorando así nuestra calidad de vida. Mejorando asi el vínculo que existe entre especies y reinos de la naturaleza.</p>
          
           <a href="./adaptogenos/" rel="noopener noreferrer">
-            <button>Saber Más
+            <button> Más información
             </button>
           </a>
 
@@ -139,23 +142,21 @@
       </section>
 
       
-<section>
-  <img src="./productos.webp" class="img--productos">
+
+<section class="productos--title">
+    <img src="./productos.svg" alt="" class="section--title reveal" width="320px" height="100px" >
 </section>
+ 
 
-     
+      <section id="productos" class="productos">
 
-<div class="medicina bg--primary">
-  <img src="./productos.svg" class="section--text reveal" width="640px" height="100px">     
-  </div>
 
-      <section id="productos" class="productos bg--primary">
 
-        <div class="productos-grid reveal">
-          
+
+   <section class="productos-grid">       
           <article id="microdosis" class="producto">
             <img src="./psilo.webp" alt="Superalimento" class="producto--img">
-            <h2>Psilocybina</h2>
+            <h3>Psilocibina</h3>
             <p>Las microdosis de psilocibina, se asocian con potenciales 
               beneficios como mejora del humor, reducción del estrés y la ansiedad.</p>
             <a href="./microdosis/" rel="noopener noreferrer">
@@ -164,7 +165,7 @@
           </article>
           <article id="cordyceps" class="producto">
             <img src="./cordiceps.webp" alt="Superalimento" class="producto--img">
-            <h2>Cordyceps</h2>
+            <h3>Cordyceps</h3>
             <p> El impulsor natural de tu vitalidad. Mejora el rendimiento físico, la libido y la salud cardiovascular. Regula el azúcar en sangre y protege el hígado.</p>
             <a href="./cordyceps/" rel="noopener noreferrer">
               <button>Conocer más</button>
@@ -172,7 +173,7 @@
           </article>
           <article id="melena-de-leon" class="producto">
             <img src="./melena-leon.webp" alt="Cosmética" class="producto--img">
-            <h2>Melena de león</h2>
+            <h3>Melena de león</h3>
             <p> Potente aliado para tu sistema nervioso e inmunológico. Mejora la memoria, reduce la ansiedad y promueve una buena salud digestiva.</p>
             <a href="./melena-de-leon/" rel="noopener noreferrer">
               <button> Conocer más</button>
@@ -180,7 +181,7 @@
           </article>
           <article id="reishi" class="producto">
             <img src="./reishi.webp" alt="Bienestar" class="producto--img">
-            <h2>Reishi</h2>
+            <h3>Reishi</h3>
             <p>El hongo de la longevidad. Combate el estrés, mejora el sueño y fortalece tu sistema inmune. </p>
             <a href="./reishi/" rel="noopener noreferrer">
               <button> Conocer más</button>
@@ -189,7 +190,7 @@
 
           <article id="shiitake" class="producto">
             <img src="./shiitake.webp" class="producto--img">
-            <h2>Shiitake</h2>
+            <h3>Shiitake</h3>
             <p> Superalimento para tu sistema cardiovascular. Reduce el colesterol, estimula el sistema inmune y aporta energía. </p>
             <a href="./shiitake/" rel="noopener noreferrer">
               <button> Conocer más </button>
@@ -199,7 +200,7 @@
 
           <article id="trametes-versicolor" class="producto">
             <img src="./trametes-versicolor.webp" class="producto--img">
-            <h2>Trametes versicolor</h2>
+            <h3>Cola de Pavo</h3>
             <p>Poderoso regenerador celular y antioxidante. Fortalece tu sistema inmunológico, mejora la salud digestiva y contribuye a la salud cardiovascular.</p>
             <a href="./trametes-versicolor/" rel="noopener noreferrer">
               <button>Conocer más</button>
@@ -207,7 +208,7 @@
           </article>
           <article id="fungi-mix" class="producto">
             <img src="./fungi-mix.webp" class="producto--img" alt="Cosmética">
-            <h2>Fungi Mix</h2>
+            <h3>Fungi Mix</h3>
             <p>Un mix de las mejores variedades de fungi, para un tratamiento integral regenerativo.</p>
             <a href="./fungi-mix" rel="noopener noreferrer">
               <button>Conocer más</button>
@@ -215,21 +216,22 @@
           </article>
           <article id="aceite-medicinal" class="producto">
             <img src="./aceite-medicinal.webp" class="producto--img">
-            <h2>Aceite Medicinal</h2>
+            <h3>Aceite Medicinal</h3>
             <p>Fórmula especial a base de cannabis y aceite de oliva extra virgen. Diseñado para proporcionar alivio y bienestar de forma natural. </p>
             <a href="./aceite-de-cannabis/" rel="noopener noreferrer">
               <button>Conocer más</button>
             </a>
           </article>
 
-        </div>
+  </section>
 
       </section>
 
     
 
       <section id="testimonios" class="testimonial-slider">
-        <img src="./testimonios.svg" class="section--text reveal" width="320px" height="100px">
+
+        <img src="./testimonios.svg" class="section--title  reveal" width="320px" height="100px">
 
         <div class="slider-container reveal">
           <div class="slider">
@@ -289,6 +291,7 @@
               </blockquote>
             </article>
           </div>
+          
           <div class="slider--buttons">
             <button class="prev" aria-label="Testimonio anterior"><img src="./mushu-left.svg" alt=""></button>
             <button class="next" aria-label="Siguiente testimonio"><img src="./mushu-right.svg" alt=""></button>
@@ -302,9 +305,16 @@
 
 
       <section id="puntos-de-venta" class="ventas--section">
+
         <img src="./venta.svg" class="section--title reveal" width="320px" height="100px">
 
-        <article class="venta--info">
+ 
+
+
+        <article class="venta-grid-4 reveal">
+
+
+       <article class="venta--info">
           <div class="reveal">
             <h3>Lago Puelo</h3>
             <p>
@@ -315,8 +325,6 @@
           </div>
         </article>
 
-
-        <article class="venta-grid-4 reveal">
           <article class="venta--info">
             <div class="reveal">
               <h3>Trelew</h3>
@@ -369,14 +377,14 @@
     <footer id="contacto" class=" animate__animated animate__fadeIn">
       <div class="footer-top">
         <section class="contacto reveal">
-          <img src="./horarios.svg" class="section--text" width="320px" height="100px">
+          <img src="./horarios.svg" class="section--title reveal" width="320px" height="100px">
           <h3>LUNES A VIERNES</h3>
           <p>10 A 18 HS</p>
           <h3>TIENDA ONLINE</h3>
           <p>24 hs los 365 días del año</p>
         </section>
         <section class="contacto reveal">
-          <img src="./contacto.svg" class="section--text" width="320px" height="100px" alt="productos">
+          <img src="./contacto.svg" class="section--title reveal" width="320px" height="100px" alt="productos">
           <h3>
             <strong>Airina</strong>
           </h3>
@@ -414,7 +422,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>Diseñado por bosqueReset</p>
+        <p>Diseñado por Ariel Contini</p>
       </div>
     </footer>
 
