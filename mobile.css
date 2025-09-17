@@ -38,7 +38,13 @@ body {
     font-family: "Montserrat", sans-serif;
     z-index: 1000;
     position: relative;
+
   }
+
+
+img{
+    user-select: none;
+}
 
 
 #myVideo{
